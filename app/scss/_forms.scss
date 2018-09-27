@@ -1,0 +1,38 @@
+.Form {
+  .custom-select, .form-control {
+    background-color: #f9f9f9;
+    border-color: #e3e3e3;
+    color: $textColor;
+    font-size: .875rem;
+    height: calc(2.75rem + 2px);
+  }
+  &--inline {
+    justify-content: center;
+  }
+  &--group {
+    .form-control {
+      border-radius: 0;
+      border: none;
+      font-size: .875rem;
+      height: auto;
+      padding: .75rem;
+      &::placeholder {
+        color: $textColor;
+      }
+    }
+    .input-group {
+      > .input-group-append {
+        > .btn {
+          background-color: $firstColor;
+          border: none;
+          border-radius: 0;
+          color: white;
+          padding: .75rem;
+          &:focus, &:hover {
+            background-color: $firstColorAlt;
+          }
+        }
+      }
+    }
+  }
+}

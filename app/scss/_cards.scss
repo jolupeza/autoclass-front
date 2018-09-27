@@ -1,0 +1,35 @@
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.Cards__item {
+  border: 1px solid $borderColor;
+  margin-bottom: 2rem;
+  width: 23%;
+}
+.Cards__figure {
+  background-color: $grayColor;
+}
+.Cards__info {
+  padding: .75rem 1rem;
+  text-align: center;
+}
+.Cards__title {
+  color: $headingColor;
+  font-size: 1.875rem;
+}
+.Cards__text {
+  strong {
+    color: $accentColor;
+    font-size: 1.25rem;
+  }
+}
+.Cards__subtitle {
+  font-size: 1.5rem;
+}
+.Cards__resalt {
+  color: $accentColor;
+  font-size: 2.25rem;
+  font-weight: 700;
+}

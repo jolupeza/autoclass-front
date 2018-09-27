@@ -1,0 +1,19 @@
+.Panel {
+  padding: 5rem 0;
+  &--second {
+    background-color: $secondColor;
+    color: white;
+  }
+  &--gray {
+    background-color: $grayColor;
+  }
+  .Panel__subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1em;
+  }
+  .Panel__title {
+    font-size: 2.75rem;
+    margin-bottom: 1em;
+  }
+}

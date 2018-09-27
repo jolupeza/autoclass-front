@@ -1,0 +1,179 @@
+.Page {
+  position: relative;
+  &--images {
+    background: url('./../images/bg-circle-small.png') 10% top no-repeat,
+                url('./../images/bg-circle-big.png') 0 bottom no-repeat;
+    padding-bottom: 15rem;
+    padding-top: 7rem;
+  }
+  &--bg {
+    background-color: transparent;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &--register {
+    background-image: url('./../images/bg-register.jpg');
+  }
+  &--birthday {
+    background-image: url('./../images/bg-birthday.jpg');
+  }
+  &--vh {
+    align-items: center;
+    display: flex;
+    min-height: var(--height-page);
+    padding-top: var(--height-header);
+  }
+  &--flex {
+    align-items: normal;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+}
+.Page__row {
+  display: flex;
+  width: 100%;
+  @media screen and (max-width: 991px) {
+    flex-wrap: wrap;
+  }
+}
+.Page__child {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  &--full {
+    width: 100%;
+  }
+  &--50 {
+    width: 50%;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  &--skyBlue {
+    background-color: $skyBlueLight;
+  }
+  &--turquesa {
+    background-color: $turquesa;
+  }
+  &--red {
+    background-color: $red;
+  }
+  &--bg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media screen and (max-width: 1300px) {
+      background-size: cover;
+    }
+  }
+  &--gratitude {
+    background-image: url('./../images/bg-gratitude.jpg');
+  }
+  &--share {
+    background-image: url('./../images/bg-share.jpg');
+  }
+  &--otherDates {
+    background-image: url('./../images/bg-other-dates.jpg');
+  }
+}
+.Page__child--50.Page__child--bg {
+  @media screen and (max-width: 1199px) {
+    background-position: 0 center;
+    background-size: 95%;
+  }
+  @media screen and (max-width: 991px) {
+    background-position: 0 bottom;
+    background-size: contain;
+  }
+  @media screen and (max-width: 767px) and (orientation: portrait) {
+    background-size: 70%;
+  }
+}
+.Page__child__body {
+  padding: 0 5rem 1.5rem 0;
+  padding-top: var(--height-header);
+  width: 50%;
+  @media screen and (max-width: 1450px) {
+    padding-bottom: 3rem;
+  }
+  @media screen and (max-width: 991px) {
+    padding: 0 1.5rem;
+    padding-top: var(--height-header);
+    width: 100%;
+  }
+  p {
+    @media screen and (max-width: 991px) {
+      text-shadow: 1px 1px 3px rgba(white, 1);
+    }
+  }
+}
+.Page__child__content {
+  align-content: center;
+  backface-visibility: visible;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  left: 0;
+  padding: 1.5rem 3rem 0 40%;
+  position: relative;
+  top: 0;
+  transition: transform .5s ease-in, backface-visibility .3s ease-out, position .2s ease;
+  transform: rotateY(0);
+  width: 100%;
+  @media screen and (max-width: 991px) {
+    padding: 2rem 2rem 0 30%;
+  }
+  &--noPadding {
+    padding: 1.5rem 0 0;
+    @media screen and (max-width: 767px) {
+      padding: 1.5rem;
+    }
+  }
+  .Page__title, p {
+    width: 100%;
+  }
+  &.hide {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+  }
+}
+.Page__title {
+  font-family: $montserrat;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  @media screen and (max-width: 991px) {
+    font-size: 1.625rem;
+  }
+  &--big {
+    font-size: 6.5rem;
+  }
+  &--medium {
+    font-size: 3rem;
+    @media screen and (max-width: 991px) {
+      font-size: 1.625rem;
+    }
+  }
+}
+.Page__bigTitle {
+  font-family: $montserrat;
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  @media screen and (max-width: 1199px) {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 2rem;
+  }
+}
+.Page__subtitle {
+  font-family: $montserrat;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}

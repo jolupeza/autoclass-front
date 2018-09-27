@@ -1,0 +1,78 @@
+.Footer {
+  background-color: $darkColorAlt;
+  padding: 2rem 0;
+}
+.Footer__text {
+  font-size: .75rem;
+  margin-bottom: 0;
+}
+.Prefooter {
+  background-color: $darkColor;
+  padding: 4rem 0;
+}
+.Prefooter__logo {
+  margin-bottom: 3rem;
+}
+.Prefooter__info {
+  margin-bottom: 0;
+  padding-left: 0;
+  li {
+    list-style: none;
+    font-size: .875rem;
+    margin-bottom: .8rem;
+  }
+}
+.Prefooter__title {
+  color: white;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+.Prefooter__menu {
+  margin-bottom: 0;
+  padding-left: 0;
+  li {
+    font-size: .875rem;
+    margin-bottom: .8rem;
+    list-style: none;
+    &.active {
+      a {
+        color: white;
+      }
+    }
+    a {
+      &:focus, &:hover {
+        color: white;
+      }
+    }
+  }
+}
+.Prefooter__social {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+  li {
+    align-items: center;
+    background-color: $accentColorAlt;
+    border-radius: 50%;
+    display: flex;
+    font-size: 1.5rem;
+    height: 60px;
+    justify-content: center;
+    list-style: none;
+    margin-right: 1rem;
+    width: 60px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active, &:focus, &:hover {
+      background-color: white;
+      a {
+        color: $thirdColor;
+      }
+    }
+    a {
+      color: white;
+      display: block;
+    }
+  }
+}

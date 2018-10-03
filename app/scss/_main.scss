@@ -1,5 +1,5 @@
 .Main {
-  margin: 2rem 0;
+  margin: 0 0 2rem;
 }
 .Main__filters {
   align-items: center;
@@ -21,6 +21,7 @@
     text-transform: uppercase;
     a {
       color: $textColor;
+      cursor: pointer;
       display: block;
       &:focus, &:hover {
         color: $secondColor;

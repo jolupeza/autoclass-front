@@ -2,6 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+}
+.Cards__loading {
+  align-items: center;
+  color: $firstColor;
+  display: flex;
+  font-size: 6rem;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
 }
 .Cards__item {
   border: 1px solid $borderColor;

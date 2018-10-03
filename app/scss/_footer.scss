@@ -34,7 +34,7 @@
     font-size: .875rem;
     margin-bottom: .8rem;
     list-style: none;
-    &.active {
+    &.current-menu-item, &.current_page_item {
       a {
         color: white;
       }

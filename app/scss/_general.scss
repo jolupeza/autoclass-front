@@ -22,7 +22,7 @@ a {
   font-weight: 700;
 }
 .ArrowTop {
-  // background-color: $green;
+  background-color: $secondColor;
   border: none;
   border-radius: 50%;
   bottom: 15px;
@@ -33,4 +33,5 @@ a {
   font-size: 2rem;
   position: fixed;
   right: 15px;
+  z-index: 9;
 }

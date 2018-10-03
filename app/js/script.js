@@ -8,27 +8,9 @@
       checkScroll();
     });
 
-    $window.on('resize', function () {
-      heightHeader();
-      heightFooter();
-      heightPage();
-    });
+    $window.on('resize', function () {});
 
     checkScroll();
-    heightHeader();
-    heightFooter();
-    heightPage();
-
-    $('.GoBottom').on('click', function (ev) {
-      ev.preventDefault();
-
-      var $this = $(ev.currentTarget),
-          href = $this.attr('href') !== undefined ? $this.attr('href') : $this.data('href');
-
-      $('html, body').stop().animate({
-        scrollTop: $(href).offset().top
-      }, 600);
-    });
 
     $('.ArrowTop').on('click', function (ev) {
       ev.preventDefault();
@@ -36,17 +18,6 @@
       $('html, body').animate({
         scrollTop: 0
       }, 800);
-    });
-
-    $('#js-display-reminders').on('click', function () {
-      var button = $(this),
-          parentWrapper = button.closest('.Page__child__content'),
-          reminderWrapper = parentWrapper.next(),
-          parentRow = parentWrapper.parent();
-
-      parentRow.removeClass('Page__child--otherDates');
-      parentWrapper.addClass('hide');
-      reminderWrapper.removeClass('hide');
     });
   });
 
@@ -73,30 +44,14 @@
     return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   };
 
-  var getHFooter = function getHFooter() {
-    return parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--height-footer'));
-  };
+  // let getHHeader = () => {
+  //   return parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--height-header'));
+  // }
 
-  var getHHeader = function getHHeader() {
-    return parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--height-header'));
-  };
+  // let heightHeader = () => {
+  //   let hHeader = parseFloat($('.Header').innerHeight());
 
-  var heightFooter = function heightFooter() {
-    var hFooter = parseFloat($('.Footer').innerHeight());
-
-    document.documentElement.style.setProperty('--height-footer', '' + hFooter);
-  };
-
-  var heightHeader = function heightHeader() {
-    var hHeader = parseFloat($('.Header').innerHeight());
-
-    document.documentElement.style.setProperty('--height-header', hHeader + 'px');
-  };
-
-  var heightPage = function heightPage() {
-    var hPage = hViewport() - getHFooter();
-
-    document.documentElement.style.setProperty('--height-page', hPage + 'px');
-  };
+  //   document.documentElement.style.setProperty('--height-header', `${hHeader}px`);
+  // }
 })(jQuery);
 //# sourceMappingURL=script.js.map

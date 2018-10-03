@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Forget</title>
+  <title>Autoclass</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -19,7 +19,7 @@
           <section class="Header__nav">
             <nav class="Header__menu">
               <ul class="Header__mainMenu">
-                <li class="active"><a href="">Home</a></li>
+                <li class="current-menu-item current_page_item"><a href="">Home</a></li>
                 <li><a href="">Marcas</a></li>
                 <li><a href="">Ayuda</a></li>
                 <li><a href="">Contacto</a></li>
@@ -38,33 +38,33 @@
   </header>
 
   <div class="container-fluid">
-    <section class="Panel Panel--gray mb-5">
-      <h2 class="Panel__title text-center">Encuentra el auto que buscas</h2>
-      <form class="Form Form--inline form-inline">
-        <label class="sr-only" for="brand">Marca</label>
-        <select class="custom-select mr-sm-5" id="brand">
-          <option selected>Marca</option>
-          <option value="1">Marca One</option>
-          <option value="2">Marca Two</option>
-          <option value="3">Marca Three</option>
-        </select>
+    <main class="Main">
+      <section class="Panel Panel--gray mb-5">
+        <h2 class="Panel__title text-center">Encuentra el auto que buscas</h2>
+        <form class="Form Form--inline form-inline">
+          <label class="sr-only" for="brand">Marca</label>
+          <select class="custom-select mr-sm-5" id="brand">
+            <option selected>Marca</option>
+            <option value="1">Marca One</option>
+            <option value="2">Marca Two</option>
+            <option value="3">Marca Three</option>
+          </select>
 
-        <label class="sr-only" for="model">Modelo</label>
-        <select class="custom-select mr-sm-5" id="model">
-          <option selected>Modelo</option>
-          <option value="1">Modelo One</option>
-          <option value="2">Modelo Two</option>
-          <option value="3">Modelo Three</option>
-        </select>
+          <label class="sr-only" for="model">Modelo</label>
+          <select class="custom-select mr-sm-5" id="model">
+            <option selected>Modelo</option>
+            <option value="1">Modelo One</option>
+            <option value="2">Modelo Two</option>
+            <option value="3">Modelo Three</option>
+          </select>
 
-        <label class="sr-only" for="fee">Cuotas desde</label>
-        <input type="text" class="form-control mr-sm-5" id="fee" placeholder="Cuotas desde">
+          <label class="sr-only" for="fee">Cuotas desde</label>
+          <input type="text" class="form-control mr-sm-5" id="fee" placeholder="Cuotas desde">
 
-        <button type="submit" class="btn Button Button--accent">Buscar</button>
-      </form>
-    </section>
+          <button type="submit" class="btn Button Button--accent">Buscar</button>
+        </form>
+      </section>
 
-    <section class="Main">
       <nav class="Main__filters">
         <ul class="Main__menuFilters">
           <li class="active"><a href="#">Nuevo</a></li>
@@ -138,128 +138,14 @@
             </p>
           </div>
         </article>
-        <article class="Cards__item">
-          <figure class="Cards__figure">
-            <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
-            <aside class="Cards__badge"></aside>
-          </figure>
-          <div class="Cards__info">
-            <h2 class="Cards__title">Toyota Runner 4xfs</h2>
-            <p class="Cards__text">Cuota inicial desde: <strong>S/. 500.00</strong></p>
-            <h4 class="Cards__subtitle">Cuota mensual desde:</h4>
-            <h3 class="Cards__resalt">S/. 79.99</h3>
-            <p>
-              <a href="#" class="btn Button Button--outline Button--outline--accent">¡Cotiza ahora!</a>
-            </p>
-          </div>
-        </article>
-        <article class="Cards__item">
-          <figure class="Cards__figure">
-            <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
-            <aside class="Cards__badge"></aside>
-          </figure>
-          <div class="Cards__info">
-            <h2 class="Cards__title">Toyota Runner 4xfs</h2>
-            <p class="Cards__text">Cuota inicial desde: <strong>S/. 500.00</strong></p>
-            <h4 class="Cards__subtitle">Cuota mensual desde:</h4>
-            <h3 class="Cards__resalt">S/. 79.99</h3>
-            <p>
-              <a href="#" class="btn Button Button--outline Button--outline--accent">¡Cotiza ahora!</a>
-            </p>
-          </div>
-        </article>
-        <article class="Cards__item">
-          <figure class="Cards__figure">
-            <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
-            <aside class="Cards__badge"></aside>
-          </figure>
-          <div class="Cards__info">
-            <h2 class="Cards__title">Toyota Runner 4xfs</h2>
-            <p class="Cards__text">Cuota inicial desde: <strong>S/. 500.00</strong></p>
-            <h4 class="Cards__subtitle">Cuota mensual desde:</h4>
-            <h3 class="Cards__resalt">S/. 79.99</h3>
-            <p>
-              <a href="#" class="btn Button Button--outline Button--outline--accent">¡Cotiza ahora!</a>
-            </p>
-          </div>
-        </article>
-        <article class="Cards__item">
-          <figure class="Cards__figure">
-            <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
-            <aside class="Cards__badge"></aside>
-          </figure>
-          <div class="Cards__info">
-            <h2 class="Cards__title">Toyota Runner 4xfs</h2>
-            <p class="Cards__text">Cuota inicial desde: <strong>S/. 500.00</strong></p>
-            <h4 class="Cards__subtitle">Cuota mensual desde:</h4>
-            <h3 class="Cards__resalt">S/. 79.99</h3>
-            <p>
-              <a href="#" class="btn Button Button--outline Button--outline--accent">¡Cotiza ahora!</a>
-            </p>
-          </div>
-        </article>
-        <article class="Cards__item">
-          <figure class="Cards__figure">
-            <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
-            <aside class="Cards__badge"></aside>
-          </figure>
-          <div class="Cards__info">
-            <h2 class="Cards__title">Toyota Runner 4xfs</h2>
-            <p class="Cards__text">Cuota inicial desde: <strong>S/. 500.00</strong></p>
-            <h4 class="Cards__subtitle">Cuota mensual desde:</h4>
-            <h3 class="Cards__resalt">S/. 79.99</h3>
-            <p>
-              <a href="#" class="btn Button Button--outline Button--outline--accent">¡Cotiza ahora!</a>
-            </p>
-          </div>
-        </article>
-        <article class="Cards__item">
-          <figure class="Cards__figure">
-            <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
-            <aside class="Cards__badge"></aside>
-          </figure>
-          <div class="Cards__info">
-            <h2 class="Cards__title">Toyota Runner 4xfs</h2>
-            <p class="Cards__text">Cuota inicial desde: <strong>S/. 500.00</strong></p>
-            <h4 class="Cards__subtitle">Cuota mensual desde:</h4>
-            <h3 class="Cards__resalt">S/. 79.99</h3>
-            <p>
-              <a href="#" class="btn Button Button--outline Button--outline--accent">¡Cotiza ahora!</a>
-            </p>
-          </div>
-        </article>
-        <article class="Cards__item">
-          <figure class="Cards__figure">
-            <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
-            <aside class="Cards__badge"></aside>
-          </figure>
-          <div class="Cards__info">
-            <h2 class="Cards__title">Toyota Runner 4xfs</h2>
-            <p class="Cards__text">Cuota inicial desde: <strong>S/. 500.00</strong></p>
-            <h4 class="Cards__subtitle">Cuota mensual desde:</h4>
-            <h3 class="Cards__resalt">S/. 79.99</h3>
-            <p>
-              <a href="#" class="btn Button Button--outline Button--outline--accent">¡Cotiza ahora!</a>
-            </p>
-          </div>
-        </article>
-        <article class="Cards__item">
-          <figure class="Cards__figure">
-            <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
-            <aside class="Cards__badge"></aside>
-          </figure>
-          <div class="Cards__info">
-            <h2 class="Cards__title">Toyota Runner 4xfs</h2>
-            <p class="Cards__text">Cuota inicial desde: <strong>S/. 500.00</strong></p>
-            <h4 class="Cards__subtitle">Cuota mensual desde:</h4>
-            <h3 class="Cards__resalt">S/. 79.99</h3>
-            <p>
-              <a href="#" class="btn Button Button--outline Button--outline--accent">¡Cotiza ahora!</a>
-            </p>
-          </div>
-        </article>
+        <aside class="Cards__loading">
+          <i class="icon-spin-alt d-inline-block animated infinite rotateIn"></i>
+        </aside>
       </section>
-    </section>
+      <div class="alert alert-danger text-center" role="alert">
+        No se encontraron autos!!!
+      </div>
+    </main>
   </div>
 
   <section class="Panel Panel--second">
@@ -291,7 +177,7 @@
         <div class="col-md-2">
           <h3 class="Prefooter__title">Información</h3>
           <ul class="Prefooter__menu">
-            <li class="active"><a href="">Inicio</a></li>
+            <li class="current-menu-item current_page_item"><a href="">Inicio</a></li>
             <li><a href="">Solo hoy!</a></li>
             <li><a href="">Marcas</a></li>
             <li><a href="">Ayuda</a></li>
@@ -330,9 +216,9 @@
     </div>
   </footer>
 
-  <!-- <button class="ArrowTop"><i class="icon-keyboard_arrow_up"></i></button> -->
+  <button class="ArrowTop"><i class="icon-keyboard_arrow_up"></i></button>
 
-  <!-- <script type="text/javascript" src="js/min/bundle.js"></script>
-  <script type="text/javascript" src="js/min/script.js"></script> -->
+  <script type="text/javascript" src="js/min/bundle.js"></script>
+  <script type="text/javascript" src="js/min/script.js"></script>
 </body>
 </html>

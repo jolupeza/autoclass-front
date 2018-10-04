@@ -2,11 +2,18 @@
   background-color: $firstColor;
   margin-bottom: 3rem;
   padding: .8rem 0;
+  @media screen and (max-width: 991px) {
+    margin-bottom: 0;
+    padding: 1rem 0;
+  }
 }
 .Header__logo {
   align-items: center;
   display: flex;
   margin-bottom: 0;
+  @media screen and (max-width: 991px) {
+    justify-content: center;
+  }
 }
 .Header__nav {
   align-items: center;
@@ -46,13 +53,23 @@
   display: flex;
   margin-bottom: 0;
   padding-left: 0;
+  width: 100%;
+  @media screen and (max-width: 991px) {
+    justify-content: space-around;
+  }
   li {
     font-size: 1.5rem;
     list-style: none;
     margin: 0 .5rem;
+    @media screen and (max-width: 991px) {
+      font-size: 3rem;
+    }
     a {
       color: white;
-      &:focus, &:hover {
+      @media screen and (max-width: 991px) {
+        color: $thirdColor;
+      }
+      &:hover {
         color: $secondColor;
       }
     }

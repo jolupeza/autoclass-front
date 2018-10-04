@@ -18,9 +18,25 @@
   border: 1px solid $borderColor;
   margin-bottom: 2rem;
   width: 23%;
+  @media screen and (max-width: 991px) {
+    width: 48%;
+  }
+  @media screen and (max-width: 767px) and (orientation: portrait) {
+    width: 100%;
+  }
 }
 .Cards__figure {
   background-color: $grayColor;
+  position: relative;
+}
+.Cards__badge {
+  background-color: $firstColorAlt;
+  color: white;
+  font-size: .75rem;
+  padding: .3rem .5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .Cards__info {
   padding: .75rem 1rem;
@@ -29,6 +45,9 @@
 .Cards__title {
   color: $headingColor;
   font-size: 1.875rem;
+  @media screen and (max-width: 991px) {
+    font-size: 1.25rem;
+  }
 }
 .Cards__text {
   strong {
@@ -38,9 +57,15 @@
 }
 .Cards__subtitle {
   font-size: 1.5rem;
+  @media screen and (max-width: 991px) {
+    font-size: 1.125rem;
+  }
 }
 .Cards__resalt {
   color: $accentColor;
   font-size: 2.25rem;
   font-weight: 700;
+  @media screen and (max-width: 991px) {
+    font-size: 1.625rem;
+  }
 }

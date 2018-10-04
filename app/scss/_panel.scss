@@ -1,19 +1,31 @@
 .Panel {
   padding: 5rem 0;
+  @media screen and (max-width: 991px) {
+    padding: 2rem 0;
+  }
   &--second {
     background-color: $secondColor;
     color: white;
   }
   &--gray {
     background-color: $grayColor;
+    @media screen and (max-width: 991px) {
+      border: 1px solid $borderColor;
+    }
   }
   .Panel__subtitle {
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 1em;
+    @media screen and (max-width: 991px) {
+      font-size: 1.125rem;
+    }
   }
   .Panel__title {
     font-size: 2.75rem;
     margin-bottom: 1em;
+    @media screen and (max-width: 991px) {
+      font-size: 1.5rem;
+    }
   }
 }

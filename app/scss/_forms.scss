@@ -8,6 +8,13 @@
   }
   &--inline {
     justify-content: center;
+    @media screen and (max-width: 991px) {
+      flex-wrap: wrap;
+      .custom-select, .form-control {
+        margin-bottom: 1.5rem;
+        width: 80%;
+      }
+    }
   }
   &--group {
     .form-control {

@@ -9,9 +9,11 @@
     });
 
     $window.on('resize', () => {
+      setTopSidebar();
     });
 
     checkScroll();
+    setTopSidebar();
 
     $('.ArrowTop').on('click', (ev) => {
       ev.preventDefault();
@@ -19,6 +21,24 @@
       $('html, body').animate({
         scrollTop: 0
       }, 800);
+    });
+
+    $('.js-toggle-sidebar a').on('click', function(ev) {
+      ev.preventDefault();
+
+      let $this = $(this),
+          Sidebar = $('.Sidebar'),
+          icon = $this.children();
+
+      if (Sidebar.hasClass('active')) {
+        Sidebar.removeClass('active');
+        icon.removeClass('icon-close').addClass('icon-bars');
+        document.documentElement.style.setProperty('--body-ov', 'auto');
+      } else {
+        Sidebar.addClass('active');
+        icon.removeClass('icon-bars').addClass('icon-close');
+        document.documentElement.style.setProperty('--body-ov', 'hidden');
+      }
     });
   });
 
@@ -37,12 +57,26 @@
     }
   }
 
+  let setTopSidebar = () => {
+    let topSidebar = heightHeader() + heightMenuMovil();
+
+    document.documentElement.style.setProperty('--top-sidebar', topSidebar);
+  }
+
   let hViewport = () => {
     return Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
   }
 
   let wViewport = () => {
     return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  }
+
+  let heightHeader = () => {
+    return parseFloat($('.Header').innerHeight());
+  }
+
+  let heightMenuMovil = () => {
+    return parseFloat($('.Header__menuMovil').innerHeight());
   }
 
   // let getHHeader = () => {

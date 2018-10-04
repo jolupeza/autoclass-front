@@ -10,12 +10,12 @@
   <header class="Header">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-lg-3">
           <h1 class="Header__logo">
             <img src="images/logo-white.png" alt="Autoclass" class="img-fluid" />
           </h1>
         </div>
-        <div class="col-md-9">
+        <div class="col-lg-9 d-none d-lg-block">
           <section class="Header__nav">
             <nav class="Header__menu">
               <ul class="Header__mainMenu">
@@ -27,6 +27,8 @@
             </nav>
             <nav class="Header__account">
               <ul class="Header__accountMenu">
+                <li class="d-lg-none"><a href=""><i class="icon-bars"></i></a></li>
+                <li class="d-lg-none"><a href=""><i class="icon-search"></i></a></li>
                 <li><a href=""><i class="icon-person_outline"></i></a></li>
                 <li><a href=""><i class="icon-settings"></i></a></li>
               </ul>
@@ -36,6 +38,33 @@
       </div>
     </div>
   </header>
+  <nav class="Header__menuMovil d-lg-none">
+    <nav class="Header__account">
+      <ul class="Header__accountMenu">
+        <li class="d-lg-none js-toggle-sidebar">
+          <a href="">
+            <i class="icon-bars"></i>
+          </a>
+        </li>
+        <li class="d-lg-none">
+          <a href=""><i class="icon-search"></i></a>
+        </li>
+        <li><a href=""><i class="icon-person_outline"></i></a></li>
+        <li><a href=""><i class="icon-settings"></i></a></li>
+      </ul>
+    </nav>
+  </nav>
+
+  <aside class="Sidebar">
+    <nav class="Header__menu">
+      <ul class="Header__mainMenu">
+        <li class="current-menu-item current_page_item"><a href="">Home</a></li>
+        <li><a href="">Marcas</a></li>
+        <li><a href="">Ayuda</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+  </aside>
 
   <div class="container-fluid">
     <main class="Main">
@@ -81,7 +110,7 @@
         <article class="Cards__item">
           <figure class="Cards__figure">
             <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
-            <aside class="Cards__badge"></aside>
+            <aside class="Cards__badge">Nuevo</aside>
           </figure>
           <div class="Cards__info">
             <h2 class="Cards__title">Toyota Runner 4xfs</h2>
@@ -96,7 +125,7 @@
         <article class="Cards__item">
           <figure class="Cards__figure">
             <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
-            <aside class="Cards__badge"></aside>
+            <aside class="Cards__badge">Nuevo</aside>
           </figure>
           <div class="Cards__info">
             <h2 class="Cards__title">Toyota Runner 4xfs</h2>
@@ -111,7 +140,7 @@
         <article class="Cards__item">
           <figure class="Cards__figure">
             <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
-            <aside class="Cards__badge"></aside>
+            <aside class="Cards__badge">Nuevo</aside>
           </figure>
           <div class="Cards__info">
             <h2 class="Cards__title">Toyota Runner 4xfs</h2>
@@ -126,7 +155,7 @@
         <article class="Cards__item">
           <figure class="Cards__figure">
             <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
-            <aside class="Cards__badge"></aside>
+            <aside class="Cards__badge">Nuevo</aside>
           </figure>
           <div class="Cards__info">
             <h2 class="Cards__title">Toyota Runner 4xfs</h2>
@@ -154,8 +183,8 @@
         <div class="col">
           <h3 class="Panel__subtitle text-center">¿Quiéres encontrar el carro que se adapta a tu presupuesto?</h3>
           <h2 class="Panel__title text-bold text-center text-uppercase">Completa el formulario y encuentra tu ideal</h2>
-          <p class="text-center">
-            <a href="#" class="btn Button Button--outline Button--outline--light">¡Cotiza ahora!</a></p>
+          <div class="text-center">
+            <a href="#" class="btn Button Button--outline Button--outline--light">¡Cotiza ahora!</a></div>
         </div>
       </div>
     </div>
@@ -164,7 +193,7 @@
   <section class="Prefooter">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-lg-3">
           <h3 class="Prefooter__logo">
             <img src="images/logo.png" alt="Autoclass" class="img-fluid" >
           </h3>
@@ -174,7 +203,7 @@
             <li>Email: <a href="#">info@midomain.com</a></li>
           </ul>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-6 col-lg-2">
           <h3 class="Prefooter__title">Información</h3>
           <ul class="Prefooter__menu">
             <li class="current-menu-item current_page_item"><a href="">Inicio</a></li>
@@ -184,7 +213,7 @@
             <li><a href="">Contacto</a></li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-3">
           <h3 class="Prefooter__title">Síganos en Redes Sociales</h3>
           <ul class="Prefooter__social">
             <li class="active"><a href="#"><i class="icon-facebook"></i></a></li>
@@ -194,7 +223,7 @@
             <li><a href="#"><i class="icon-youtube-play"></i></a></li>
           </ul>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <h3 class="Prefooter__title">Suscríbase a nuestras noticias</h3>
           <p>Ingrese su e-mail y le estaremos avisando de nuestras ofertas especiales, no deje de enterarse de todos nuestros descuentos.</p>
           <form class="Form Form--group mt-5" action="">

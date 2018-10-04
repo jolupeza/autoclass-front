@@ -1,8 +1,15 @@
+:root {
+  --top-sidebar: 0;
+  --body-ov: 'auto';
+}
+
 body {
   background-color: $bodyColor;
   color: $textColor;
   font-family: $body-font;
   font-size: 16px;
+  overflow: var(--body-ov);
+  position: relative;
 }
 a {
   color: $firstColor;

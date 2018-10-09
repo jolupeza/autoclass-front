@@ -66,3 +66,16 @@
     }
   }
 }
+.Main__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  p {
+    margin-bottom: 0;
+  }
+}
+.Main__footer {
+  .Pagination__list {
+    justify-content: center;
+  }
+}

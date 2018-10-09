@@ -40,6 +40,22 @@
         document.documentElement.style.setProperty('--body-ov', 'hidden');
       }
     });
+
+    $('[data-toggle="collapse"]').on('click', function (ev) {
+      ev.preventDefault();
+
+      let $this = $(this),
+          parent = $this.closest('.Form__collapse'),
+          content = parent.find('.Form__collapse__content');
+
+      if (content.hasClass('show')) {
+        $this.removeClass('icon-minus').addClass('icon-plus');
+        content.removeClass('show')
+      } else {
+        $this.removeClass('icon-plus').addClass('icon-minus');
+        content.addClass('show')
+      }
+    });
   });
 
   let checkScroll = () => {

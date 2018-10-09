@@ -18,6 +18,9 @@
   border: 1px solid $borderColor;
   margin-bottom: 2rem;
   width: 23%;
+  &--33 {
+    width: 32%;
+  }
   @media screen and (max-width: 991px) {
     width: 48%;
   }
@@ -36,8 +39,12 @@
   position: absolute;
   right: 0;
   top: 0;
+  text-transform: uppercase;
   &--nuevo {
     background-color: $firstColorAlt;
+  }
+  &--seminuevo {
+    background-color: $fourthColor;
   }
 }
 .Cards__info {

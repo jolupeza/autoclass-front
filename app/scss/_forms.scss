@@ -6,6 +6,17 @@
     font-size: .875rem;
     height: calc(2.75rem + 2px);
   }
+  .input-group-append {
+    .btn {
+      background-color: #f9f9f9;
+      border-color: #e3e3e3;
+      border-left: none;
+      [class^="icon-"] {
+        color: $textColor;
+        font-size: 1.5rem;
+      }
+    }
+  }
   &--inline {
     justify-content: center;
     @media screen and (max-width: 991px) {
@@ -41,5 +52,35 @@
         }
       }
     }
+  }
+}
+.Form__collapse {
+  border-bottom: 1px dotted $borderColorAlt;
+  margin-bottom: 2rem;
+}
+.Form__collapse__header {
+
+}
+.Form__collapse__title {
+  color: $secondColorAlt;
+  font-size: .875rem;
+  font-weight: 700;
+  position: relative;
+  [class^="icon-"] {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+  }
+}
+.Form__collapse__content {
+  padding: .8rem;
+  &:not(.show) {
+    display: none;
+  }
+  &.collapsing {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: height .35s ease;
   }
 }

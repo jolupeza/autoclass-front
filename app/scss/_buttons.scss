@@ -3,6 +3,9 @@
   font-size: 1.125rem;
   padding: .75rem 1.5rem;
   transition: background-color .3s ease-out;
+  &--full {
+    width: 100%;
+  }
   &--outline {
     background-color: transparent;
     border: {
@@ -31,6 +34,13 @@
   &--second {
     background-color: $secondColor;
     color: white;
+  }
+  &--secondAlt {
+    background-color: $secondColorAlt;
+    color: white;
+    &:focus, &:hover {
+      background-color: $secondColor;
+    }
   }
   &--accent {
     background-color: $accentColor;

@@ -19,6 +19,9 @@ a {
     text-decoration: none;
   }
 }
+hr {
+  background-color: $borderColor;
+}
 .text-white {
   color: white;
 }

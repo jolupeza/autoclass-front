@@ -40,3 +40,34 @@
     }
   }
 }
+.Sidebar__title {
+  color: $secondColorAlt;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.Sidebar__params {
+  background-color: #f9f9f9;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.Sidebar__param {
+  margin-right: 1rem;
+  [class^="icon-"] {
+    color: $secondColorAlt;
+    cursor: pointer;
+    font-size: .875rem;
+  }
+}
+.Sidebar__action {
+  background-color: transparent;
+  border: none;
+  color: $secondColorAlt;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0;
+  &:hover {
+    color: $secondColor;
+    text-decoration: none;
+  }
+}

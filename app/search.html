@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Autoclass</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="Header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <h1 class="Header__logo">
+            <img src="images/logo-white.png" alt="Autoclass" class="img-fluid" />
+          </h1>
+        </div>
+        <div class="col-lg-9 d-none d-lg-block">
+          <section class="Header__nav">
+            <nav class="Header__menu">
+              <ul class="Header__mainMenu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Marcas</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Contacto</a></li>
+              </ul>
+            </nav>
+            <nav class="Header__account">
+              <ul class="Header__accountMenu">
+                <li class="d-lg-none"><a href=""><i class="icon-bars"></i></a></li>
+                <li class="d-lg-none"><a href=""><i class="icon-search"></i></a></li>
+                <li><a href=""><i class="icon-person_outline"></i></a></li>
+                <li><a href=""><i class="icon-settings"></i></a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="Header__menuMovil d-lg-none">
+    <nav class="Header__account">
+      <ul class="Header__accountMenu">
+        <li class="d-lg-none js-toggle-sidebar">
+          <a href="">
+            <i class="icon-bars"></i>
+          </a>
+        </li>
+        <li class="d-lg-none">
+          <a href=""><i class="icon-search"></i></a>
+        </li>
+        <li><a href=""><i class="icon-person_outline"></i></a></li>
+        <li><a href=""><i class="icon-settings"></i></a></li>
+      </ul>
+    </nav>
+  </nav>
+
+  <aside class="Sidebar">
+    <nav class="Header__menu">
+      <ul class="Header__mainMenu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Marcas</a></li>
+        <li><a href="">Ayuda</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="container-fluid">
+    <main class="Main">
+      <div class="row">
+        <div class="col-lg-3">
+          <aside class="Sidebar__left">
+            <h4 class="Sidebar__title">Buscar opción</h4>
+
+            <form class="Form">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="btn-search">
+                <div class="input-group-append">
+                  <button class="btn" type="button" id="btn-search">
+                    <i class="icon-search"></i>
+                  </button>
+                </div>
+              </div>
+
+              <button type="submit" class="btn Button Button--secondAlt Button--full text-uppercase">Filtrar por</button>
+
+              <article class="Sidebar__params">
+                <span class="Sidebar__param">Marca <i class="icon-close"></i></span>
+                <span class="Sidebar__param">Modelo <i class="icon-close"></i></span>
+                <span class="Sidebar__param">Cuota desde S/. 100 <i class="icon-close"></i></span>
+                <p class="mt-3 mb-0"><button class="btn-link Sidebar__action">Limpiar todo</button></p>
+              </article>
+
+              <div class="form-group Form__collapse">
+                <header class="Form__collapse__header">
+                  <h5 class="Form__collapse__title">Marca <i class="icon-plus" data-toggle="collapse"></i></h5>
+                </header>
+                <div class="Form__collapse__content">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="brand-toyota">
+                    <label class="custom-control-label" for="brand-toyota">Toyota</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="brand-ford">
+                    <label class="custom-control-label" for="brand-ford">Ford</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="brand-hyundai">
+                    <label class="custom-control-label" for="brand-hyundai">Hyundai</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group Form__collapse">
+                <header class="Form__collapse__header">
+                  <h5 class="Form__collapse__title">Modelo <i class="icon-plus" data-toggle="collapse"></i></h5>
+                </header>
+                <div class="Form__collapse__content">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="model-1">
+                    <label class="custom-control-label" for="model-1">Modelo 1</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="model-2">
+                    <label class="custom-control-label" for="model-2">Modelo 2</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="model-3">
+                    <label class="custom-control-label" for="model-3">Modelo 3</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group Form__collapse">
+                <header class="Form__collapse__header">
+                  <h5 class="Form__collapse__title">Cuota mensual desde <i class="icon-plus" data-toggle="collapse"></i></h5>
+                </header>
+                <div class="Form__collapse__content">
+                  <input type="text" class="form-control mb-4 col-lg-3" name="fee_mount" id="fee_mount" value="20" />
+                  <input type="range" class="custom-range" value="20" min="20" max="1000" step="10" id="fee_month">
+                </div>
+              </div>
+            </form>
+          </aside>
+        </div>
+        <div class="col-lg-9">
+          <header class="Main__header">
+            <p>102 autos encontrados</p>
+            <nav class="Pagination" aria-label="Page navigation">
+              <ul class="pagination Pagination__list">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <hr>
+          <section class="Cards">
+            <article class="Cards__item Cards__item--33">
+              <figure class="Cards__figure">
+                <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
+                <aside class="Cards__badge Cards__badge--nuevo">Nuevo</aside>
+              </figure>
+              <div class="Cards__info">
+                <h2 class="Cards__title">Toyota Runner 4xfs</h2>
+                <p class="Cards__text">Cuota inicial desde: <strong>S/. 500.00</strong></p>
+                <h4 class="Cards__subtitle">Cuota mensual desde:</h4>
+                <h3 class="Cards__resalt">S/. 79.99</h3>
+                <p>
+                  <a href="#" class="btn Button Button--outline Button--outline--accent">¡Cotiza ahora!</a>
+                </p>
+              </div>
+            </article>
+            <article class="Cards__item Cards__item--33">
+              <figure class="Cards__figure">
+                <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
+                <aside class="Cards__badge Cards__badge--seminuevo">Seminuevo</aside>
+              </figure>
+              <div class="Cards__info">
+                <h2 class="Cards__title">Toyota Runner 4xfs</h2>
+                <p class="Cards__text">Cuota inicial desde: <strong>S/. 500.00</strong></p>
+                <h4 class="Cards__subtitle">Cuota mensual desde:</h4>
+                <h3 class="Cards__resalt">S/. 79.99</h3>
+                <p>
+                  <a href="#" class="btn Button Button--outline Button--outline--accent">¡Cotiza ahora!</a>
+                </p>
+              </div>
+            </article>
+            <article class="Cards__item Cards__item--33">
+              <figure class="Cards__figure">
+                <img src="images/auto.png" alt="Toyota Runner 4xfs" class="img-fluid" />
+                <aside class="Cards__badge Cards__badge--nuevo">Nuevo</aside>
+              </figure>
+              <div class="Cards__info">
+                <h2 class="Cards__title">Toyota Runner 4xfs</h2>
+                <p class="Cards__text">Cuota inicial desde: <strong>S/. 500.00</strong></p>
+                <h4 class="Cards__subtitle">Cuota mensual desde:</h4>
+                <h3 class="Cards__resalt">S/. 79.99</h3>
+                <p>
+                  <a href="#" class="btn Button Button--outline Button--outline--accent">¡Cotiza ahora!</a>
+                </p>
+              </div>
+            </article>
+            <aside class="Cards__loading">
+              <i class="icon-spin-alt d-inline-block animated infinite rotateIn"></i>
+            </aside>
+          </section>
+          <!-- <div class="alert alert-danger text-center" role="alert">
+            No se encontraron autos!!!
+          </div> -->
+          <footer class="Main__footer">
+            <hr>
+            <nav class="Pagination" aria-label="Page navigation">
+              <ul class="pagination Pagination__list">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <section class="Prefooter">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <h3 class="Prefooter__logo">
+            <img src="images/logo.png" alt="Autoclass" class="img-fluid" >
+          </h3>
+          <ul class="Prefooter__info">
+            <li>Dirección: 123 Lima, Perú</li>
+            <li>Teléfono: +51 123 456 789 / 01 123 456</li>
+            <li>Email: <a href="#">info@midomain.com</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <h3 class="Prefooter__title">Información</h3>
+          <ul class="Prefooter__menu">
+            <li class="current-menu-item current_page_item"><a href="">Inicio</a></li>
+            <li><a href="">Solo hoy!</a></li>
+            <li><a href="">Marcas</a></li>
+            <li><a href="">Ayuda</a></li>
+            <li><a href="">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3 class="Prefooter__title">Síganos en Redes Sociales</h3>
+          <ul class="Prefooter__social">
+            <li class="active"><a href="#"><i class="icon-facebook"></i></a></li>
+            <li><a href="#"><i class="icon-google-plus"></i></a></li>
+            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-instagram"></i></a></li>
+            <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="Prefooter__title">Suscríbase a nuestras noticias</h3>
+          <p>Ingrese su e-mail y le estaremos avisando de nuestras ofertas especiales, no deje de enterarse de todos nuestros descuentos.</p>
+          <form class="Form Form--group mt-5" action="">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Ingrese su e-mail" aria-describedby="button-addon1">
+              <div class="input-group-append">
+                <button class="btn" type="button" id="button-addon1">Suscríbeme!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="Footer">
+    <div class="container-fluid">
+      <p class="Footer__text">&copy; 2018. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <button class="ArrowTop"><i class="icon-keyboard_arrow_up"></i></button>
+
+  <script type="text/javascript" src="js/min/bundle.js"></script>
+  <script type="text/javascript" src="js/min/script.js"></script>
+</body>
+</html>

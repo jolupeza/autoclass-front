@@ -1,0 +1,46 @@
+.Single__state {
+  font-size: .875rem;
+  font-weight: 300;
+  &--nuevo {
+    color: $firstColor;
+  }
+  &--seminuevo {
+    color: $fourthColor;
+  }
+  &--populares {
+    color: $accentColor;
+  }
+}
+.Single__title {
+  color: $headingColor;
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+.Single__sold {
+  color: $thirdColor;
+  font-size: .875rem;
+  font-weight: 700;
+}
+.Single__price {
+  display: flex;
+  justify-content: space-between;
+}
+.Single__feeSubtitle {
+  font-size: 1.5rem;
+}
+.Single__fee {
+  color: $headingColor;
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+.Single__priceList {
+  padding-left: 0;
+  text-align: right;
+  li {
+    list-style: none;
+    span {
+      color: #3b3b3b;
+      font-size: 1.25rem;
+    }
+  }
+}

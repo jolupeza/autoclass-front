@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Autoclass</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="Header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <h1 class="Header__logo">
+            <a href="index.html">
+              <img src="images/logo-white.png" alt="Autoclass" class="img-fluid" />
+            </a>
+          </h1>
+        </div>
+        <div class="col-lg-9 d-none d-lg-block">
+          <section class="Header__nav">
+            <nav class="Header__menu">
+              <ul class="Header__mainMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Marcas</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Contacto</a></li>
+              </ul>
+            </nav>
+            <nav class="Header__account">
+              <ul class="Header__accountMenu">
+                <li class="d-lg-none"><a href=""><i class="icon-bars"></i></a></li>
+                <li class="d-lg-none"><a href=""><i class="icon-search"></i></a></li>
+                <li><a href=""><i class="icon-person_outline"></i></a></li>
+                <li><a href=""><i class="icon-settings"></i></a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="Header__menuMovil d-lg-none">
+    <nav class="Header__account">
+      <ul class="Header__accountMenu">
+        <li class="d-lg-none js-toggle-sidebar">
+          <a href="">
+            <i class="icon-bars"></i>
+          </a>
+        </li>
+        <li class="d-lg-none">
+          <a href=""><i class="icon-search"></i></a>
+        </li>
+        <li><a href=""><i class="icon-person_outline"></i></a></li>
+        <li><a href=""><i class="icon-settings"></i></a></li>
+      </ul>
+    </nav>
+  </nav>
+
+  <aside class="Sidebar">
+    <nav class="Header__menu">
+      <ul class="Header__mainMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Marcas</a></li>
+        <li><a href="">Ayuda</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="container-fluid">
+    <main class="Main">
+      <section class="Single">
+        <div class="row">
+          <div class="col-md-6">
+            <figure class="Single__figure text-center">
+              <img src="images/auto.png" alt="Auto" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <div class="Single__info">
+              <h5 class="Single__state Single__state--nuevo">Nuevo</h5>
+              <h2 class="Single__title">Hyundai Elantra 2018</h2>
+              <h6 class="Single__sold">399 vendidos</h6>
+              <div class="Single__price">
+                <div class="Single__feeMonth">
+                  <h4 class="Single__feeSubtitle">Cuota mensual desde:</h4>
+                  <h3 class="Single__fee">S/. 79.99</h3>
+                </div>
+                <div class="Single__priceFinal">
+                  <ul class="Single__priceList">
+                    <li>Cuota inicial desde: <span>S/. 500.00</span></li>
+                    <li>Precio final: <span>S/. 5000.00</span></li>
+                  </ul>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit earum fugiat dolor, facere temporibus molestias aspernatur sunt vero asperiores voluptate, eum quidem! Quas accusamus, id sequi et, cumque fugit enim!</p>
+              <p>
+                <a href="single.html" class="btn Button Button--first">¡Cotiza ahora!</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <nav class="Tabs__nav">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-description-tab" data-toggle="tab" href="#nav-description" role="tab" aria-controls="nav-description" aria-selected="true">Descripción</a>
+            <a class="nav-item nav-link" id="nav-characteristics-tab" data-toggle="tab" href="#nav-characteristics" role="tab" aria-controls="nav-characteristics" aria-selected="false">Características</a>
+            <a class="nav-item nav-link" id="nav-accessories-tab" data-toggle="tab" href="#nav-accessories" role="tab" aria-controls="nav-accessories" aria-selected="false">Accesorios</a>
+          </div>
+        </nav>
+        <div class="tab-content Tabs__content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab">
+            <h3>Descripción</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sint architecto dolorem quisquam quam molestiae eius nihil alias explicabo rem, porro vel sunt ipsam. Quod repellat adipisci, ea eligendi nisi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores placeat ea eaque dignissimos nemo tenetur sapiente temporibus cupiditate, debitis consequuntur? Velit delectus temporibus distinctio aperiam, iste magni quo officia odit?</p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="nav-characteristics" role="tabpanel" aria-labelledby="nav-characteristics-tab">
+            <h3>Características</h3>
+            <ul class="Table">
+              <li><span>Marca</span> Hyundai</li>
+              <li><span>Modelo</span> Elantra</li>
+              <li><span>Año</span> 2018</li>
+              <li><span>Kilometraje</span> 0 km</li>
+              <li><span>Transmisión</span> Automática</li>
+              <li><span>Combustible</span> Gasolina</li>
+              <li><span>Cilindrada</span> 8</li>
+              <li><span>Transacción</span> 4x2</li>
+              <li><span>Puertas</span> 5</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="nav-accessories" role="tabpanel" aria-labelledby="nav-accessories-tab">
+            <h3>Accesorios</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- <aside class="Cards__loading">
+        <i class="icon-spin-alt d-inline-block animated infinite rotateIn"></i>
+      </aside> -->
+    </main>
+  </div>
+
+  <footer class="Footer">
+    <div class="container-fluid">
+      <p class="Footer__text">&copy; 2018. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <button class="ArrowTop"><i class="icon-keyboard_arrow_up"></i></button>
+
+  <script type="text/javascript" src="js/min/bundle.js"></script>
+  <script type="text/javascript" src="js/min/script.js"></script>
+</body>
+</html>

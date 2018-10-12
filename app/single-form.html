@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Autoclass</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="Header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <h1 class="Header__logo">
+            <a href="index.html">
+              <img src="images/logo-white.png" alt="Autoclass" class="img-fluid" />
+            </a>
+          </h1>
+        </div>
+        <div class="col-lg-9 d-none d-lg-block">
+          <section class="Header__nav">
+            <nav class="Header__menu">
+              <ul class="Header__mainMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Marcas</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Contacto</a></li>
+              </ul>
+            </nav>
+            <nav class="Header__account">
+              <ul class="Header__accountMenu">
+                <li class="d-lg-none"><a href=""><i class="icon-bars"></i></a></li>
+                <li class="d-lg-none"><a href=""><i class="icon-search"></i></a></li>
+                <li><a href=""><i class="icon-person_outline"></i></a></li>
+                <li><a href=""><i class="icon-settings"></i></a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="Header__menuMovil d-lg-none">
+    <nav class="Header__account">
+      <ul class="Header__accountMenu">
+        <li class="d-lg-none js-toggle-sidebar">
+          <a href="">
+            <i class="icon-bars"></i>
+          </a>
+        </li>
+        <li class="d-lg-none">
+          <a href=""><i class="icon-search"></i></a>
+        </li>
+        <li><a href=""><i class="icon-person_outline"></i></a></li>
+        <li><a href=""><i class="icon-settings"></i></a></li>
+      </ul>
+    </nav>
+  </nav>
+
+  <aside class="Sidebar">
+    <nav class="Header__menu">
+      <ul class="Header__mainMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Marcas</a></li>
+        <li><a href="">Ayuda</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="container-fluid">
+    <main class="Main">
+      <section class="Single">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <a href="single.html"><i class="icon-arrow_back"></i> Volver</a>
+            <header class="Single__header">
+              <div class="Single__header__title">
+                <h5 class="Single__state Single__state--nuevo">Nuevo</h5>
+                <h2 class="Single__title">Hyundai Elantra 2018</h2>
+              </div>
+              <div class="Single__feeMonth">
+                <h4 class="Single__feeSubtitle">Cuota mensual desde:</h4>
+                <h3 class="Single__fee">S/. 79.99</h3>
+              </div>
+            </header>
+            <figure class="Single__figure text-center">
+              <img src="images/auto.png" alt="Auto" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <div class="Single__info">
+              <form action="" class="Form Single__form">
+                <div class="form-group">
+                  <label for="name" class="sr-only">Nombre</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                  <label for="dni" class="sr-only">DNI</label>
+                  <input type="text" class="form-control" name="dni" id="dni" placeholder="DNI">
+                </div>
+                <div class="form-group">
+                  <label for="email" class="sr-only">Correo electrónico</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico">
+                </div>
+              </form>
+              <p class="text-center">
+                <a href="single.html" class="btn Button Button--first">¡Cotiza ahora!</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <aside class="Cards__loading">
+        <i class="icon-spin-alt d-inline-block animated infinite rotateIn"></i>
+      </aside> -->
+    </main>
+  </div>
+
+  <footer class="Footer">
+    <div class="container-fluid">
+      <p class="Footer__text">&copy; 2018. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <button class="ArrowTop"><i class="icon-keyboard_arrow_up"></i></button>
+
+  <script type="text/javascript" src="js/min/bundle.js"></script>
+  <script type="text/javascript" src="js/min/script.js"></script>
+</body>
+</html>

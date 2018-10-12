@@ -10026,6 +10026,9 @@ hr {
 .text-white {
   color: white; }
 
+.text-firstColor {
+  color: #579bcb; }
+
 .text-light {
   font-weight: 300; }
 
@@ -10618,6 +10621,15 @@ hr {
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%; }
 
+.Single__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 1.5rem 0; }
+
 .Single__state {
   font-size: .875rem;
   font-weight: 300; }
@@ -10650,7 +10662,7 @@ hr {
   font-size: 1.5rem; }
 
 .Single__fee {
-  color: #242323;
+  color: #579bcb;
   font-size: 2.75rem;
   font-weight: 700; }
 
@@ -10662,6 +10674,10 @@ hr {
     .Single__priceList li span {
       color: #3b3b3b;
       font-size: 1.25rem; }
+
+.Single__form {
+  margin: 0 auto;
+  width: 50%; }
 
 .Tabs__nav .nav-tabs {
   border-bottom: none; }

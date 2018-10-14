@@ -1,7 +1,7 @@
 .Panel {
   padding: 5rem 0;
   @media screen and (max-width: 991px) {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
   }
   &--second {
     background-color: $secondColor;
@@ -29,3 +29,15 @@
     }
   }
 }
+// #js-search {
+//   position: relative;
+//   transition: left 2s ease-out;
+//   @media screen and (max-width: 991px) {
+//     display: none;
+//     left: -100%;
+//     &.active {
+//       display: block;
+//       left: 0;
+//     }
+//   }
+// }

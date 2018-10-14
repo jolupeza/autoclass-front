@@ -1,19 +1,22 @@
 "use strict";
 
 ;(function($) {
-  let $window = $(window);
+  let $window = $(window),
+      statusSearch = false;
 
   $(function () {
-    $window.on('scroll', () => {
+    $window.on('scroll', function() {
       checkScroll();
     });
 
-    $window.on('resize', () => {
+    $window.on('resize', function () {
       setTopSidebar();
+      checkSearch();
     });
 
     checkScroll();
     setTopSidebar();
+    checkSearch();
 
     $('.ArrowTop').on('click', (ev) => {
       ev.preventDefault();
@@ -56,6 +59,24 @@
         content.addClass('show')
       }
     });
+
+    $('#js-toggle-search').on('click', function (ev) {
+      ev.preventDefault();
+
+      let search = $('#js-search');
+
+      if (search.hasClass('active')) {
+        search.fadeOut('slow', function() {
+          search.removeClass('active');
+          statusSearch = false;
+        });
+      } else {
+        search.fadeIn('slow', function() {
+          search.addClass('active');
+          statusSearch =  true;
+        });
+      }
+    })
   });
 
   let checkScroll = () => {
@@ -77,6 +98,22 @@
     let topSidebar = heightHeader() + heightMenuMovil();
 
     document.documentElement.style.setProperty('--top-sidebar', topSidebar);
+  }
+
+  let checkSearch = () => {
+    let search = $('#js-search');
+
+    if (statusSearch) { return; }
+
+    if (window.matchMedia("(max-width: 991px)").matches) {
+      search.fadeOut('fast', function() {
+        search.removeClass('active')
+      });
+    } else {
+      search.fadeIn('fast', function() {
+        search.addClass('active')
+      });
+    }
   }
 
   let hViewport = () => {

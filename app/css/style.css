@@ -9901,8 +9901,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("./../fonts/icomoon.eot?da1rza");
-  src: url("./../fonts/icomoon.eot?da1rza#iefix") format("embedded-opentype"), url("./../fonts/icomoon.ttf?da1rza") format("truetype"), url("./../fonts/icomoon.woff?da1rza") format("woff"), url("./../fonts/icomoon.svg?da1rza#icomoon") format("svg");
+  src: url("./../fonts/icomoon.eot?o34dge");
+  src: url("./../fonts/icomoon.eot?o34dge#iefix") format("embedded-opentype"), url("./../fonts/icomoon.ttf?o34dge") format("truetype"), url("./../fonts/icomoon.woff?o34dge") format("woff"), url("./../fonts/icomoon.svg?o34dge#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -9969,6 +9969,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .icon-person_outline:before {
   content: "\e911"; }
+
+.icon-home:before {
+  content: "\e91a"; }
 
 .icon-circle:before {
   content: "\e919"; }
@@ -10075,7 +10078,7 @@ hr {
       flex-wrap: wrap; }
       .Form--inline .custom-select, .Form--inline .form-control {
         margin-bottom: 1.5rem;
-        width: 80%; } }
+        width: 90%; } }
 
 .Form--group .form-control {
   border-radius: 0;
@@ -10105,11 +10108,18 @@ hr {
   border-bottom: 1px dotted #e0e0e0;
   margin-bottom: 2rem; }
 
+@media screen and (max-width: 991px) {
+  .Form__collapse__header {
+    padding: .8rem 0; } }
+
 .Form__collapse__title {
   color: #03a9f4;
   font-size: .875rem;
   font-weight: 700;
   position: relative; }
+  @media screen and (max-width: 991px) {
+    .Form__collapse__title {
+      font-size: 1rem; } }
   .Form__collapse__title [class^="icon-"] {
     cursor: pointer;
     position: absolute;
@@ -10125,6 +10135,9 @@ hr {
     position: relative;
     -webkit-transition: height .35s ease;
     transition: height .35s ease; }
+  @media screen and (max-width: 991px) {
+    .Form__collapse__content .custom-control {
+      margin-bottom: .8rem; } }
 
 .Button {
   border-radius: 0;
@@ -10256,6 +10269,9 @@ hr {
       .Header__accountMenu li a:hover {
         color: #03599f; }
 
+.Header__menuMovil {
+  margin-bottom: 1.5rem; }
+
 .Footer {
   background-color: #0d0d0d;
   padding: 2rem 0; }
@@ -10331,12 +10347,30 @@ hr {
     .Prefooter__social li a {
       color: white;
       display: block; }
+    @media screen and (max-width: 1400px) {
+      .Prefooter__social li {
+        height: 50px;
+        width: 50px; } }
+    @media screen and (max-width: 1200px) {
+      .Prefooter__social li {
+        font-size: 1rem;
+        height: 40px;
+        width: 40px; } }
+    @media screen and (max-width: 991px) {
+      .Prefooter__social li {
+        font-size: 1.5rem;
+        height: 60px;
+        width: 60px; } }
+    @media screen and (max-width: 767px) {
+      .Prefooter__social li {
+        height: 50px;
+        width: 50px; } }
 
 .Panel {
   padding: 5rem 0; }
   @media screen and (max-width: 991px) {
     .Panel {
-      padding: 2rem 0; } }
+      padding: 2rem 1rem; } }
   .Panel--second {
     background-color: #03599f;
     color: white; }
@@ -10377,6 +10411,7 @@ hr {
   width: 60%; }
   @media screen and (max-width: 991px) {
     .Main__filters {
+      padding: 0 .8rem;
       width: 100%; } }
 
 .Main__menuFilters {
@@ -10402,7 +10437,8 @@ hr {
         margin-right: 0; } }
     @media screen and (max-width: 767px) {
       .Main__menuFilters li {
-        font-size: 1.25rem; } }
+        font-size: 1.125rem;
+        padding: 0 .5rem; } }
     .Main__menuFilters li a {
       color: #5e5e5e;
       cursor: pointer;
@@ -10482,7 +10518,7 @@ hr {
   width: 23%; }
   .Cards__item--33 {
     width: 32%; }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1199px) {
     .Cards__item {
       width: 48%; } }
   @media screen and (max-width: 767px) and (orientation: portrait) {
@@ -10629,6 +10665,13 @@ hr {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 1.5rem 0; }
+  @media screen and (max-width: 991px) {
+    .Single__header .Single__header__title, .Single__header .Single__feeMonth {
+      width: 100%; } }
+  @media screen and (max-width: 991px) {
+    .Single__header {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
 .Single__state {
   font-size: .875rem;
@@ -10657,6 +10700,14 @@ hr {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media screen and (max-width: 767px) {
+    .Single__price {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+
+@media screen and (max-width: 767px) {
+  .Single__feeMonth, .Single__priceFinal {
+    width: 100%; } }
 
 .Single__feeSubtitle {
   font-size: 1.5rem; }
@@ -10669,6 +10720,9 @@ hr {
 .Single__priceList {
   padding-left: 0;
   text-align: right; }
+  @media screen and (max-width: 767px) {
+    .Single__priceList {
+      text-align: left; } }
   .Single__priceList li {
     list-style: none; }
     .Single__priceList li span {
@@ -10678,6 +10732,12 @@ hr {
 .Single__form {
   margin: 0 auto;
   width: 50%; }
+  @media screen and (max-width: 1400px) {
+    .Single__form {
+      width: 70%; } }
+  @media screen and (max-width: 1199px) {
+    .Single__form {
+      width: 90%; } }
 
 .Tabs__nav .nav-tabs {
   border-bottom: none; }
@@ -10698,12 +10758,24 @@ hr {
   .Tabs__nav .nav-link:focus, .Tabs__nav .nav-link:hover {
     border-bottom: 3px solid #fe5a1a;
     color: #242323; }
+  @media screen and (max-width: 767px) {
+    .Tabs__nav .nav-link {
+      padding: .5rem; } }
+  @media screen and (max-width: 575px) {
+    .Tabs__nav .nav-link {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      text-align: center; } }
 
 .Tabs__content {
   background-color: #f5f5f5;
   padding: 2.5rem; }
   .Tabs__content .tab-pane {
     width: 50%; }
+    @media screen and (max-width: 1199px) {
+      .Tabs__content .tab-pane {
+        width: 100%; } }
   .Tabs__content h3 {
     color: #242323;
     font-size: 1.875rem;
@@ -10732,6 +10804,9 @@ hr {
       .Tabs__content ul.Table li span {
         display: inline-block;
         font-weight: 700;
-        width: 20%; }
+        min-width: 20%; }
+        @media screen and (max-width: 991px) {
+          .Tabs__content ul.Table li span {
+            min-width: 50%; } }
 
 /*# sourceMappingURL=maps/style.css.map */

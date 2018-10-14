@@ -20,6 +20,13 @@
       border-bottom: 3px solid $thirdColor;
       color: $headingColor;
     }
+    @media screen and (max-width: 767px) {
+      padding: .5rem;
+    }
+    @media screen and (max-width: 575px) {
+      flex: 1 1 auto;
+      text-align: center;
+    }
   }
 }
 .Tabs__content {
@@ -27,6 +34,9 @@
   padding: 2.5rem;
   .tab-pane {
     width: 50%;
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+    }
   }
   h3 {
     color: $headingColor;
@@ -61,7 +71,10 @@
         span {
           display: inline-block;
           font-weight: 700;
-          width: 20%;
+          min-width: 20%;
+          @media screen and (max-width: 991px) {
+            min-width: 50%;
+          }
         }
       }
     }

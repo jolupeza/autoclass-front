@@ -43,16 +43,16 @@
   <nav class="Header__menuMovil d-lg-none">
     <nav class="Header__account">
       <ul class="Header__accountMenu">
-        <li class="d-lg-none js-toggle-sidebar">
-          <a href="">
-            <i class="icon-bars"></i>
+        <li>
+          <a href="index.html">
+            <i class="icon-home"></i>
           </a>
         </li>
-        <li class="d-lg-none">
+        <li id="js-toggle-search">
           <a href=""><i class="icon-search"></i></a>
         </li>
-        <li><a href=""><i class="icon-person_outline"></i></a></li>
-        <li><a href=""><i class="icon-settings"></i></a></li>
+        <!-- <li><a href=""><i class="icon-person_outline"></i></a></li>
+        <li><a href=""><i class="icon-settings"></i></a></li> -->
       </ul>
     </nav>
   </nav>
@@ -72,12 +72,12 @@
     <main class="Main">
       <section class="Single">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <figure class="Single__figure text-center">
               <img src="images/auto.png" alt="Auto" class="img-fluid">
             </figure>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="Single__info">
               <h5 class="Single__state Single__state--nuevo">Nuevo</h5>
               <h2 class="Single__title">Hyundai Elantra 2018</h2>
@@ -151,6 +151,55 @@
       </aside> -->
     </main>
   </div>
+
+  <section class="Prefooter">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <h3 class="Prefooter__logo">
+            <img src="images/logo.png" alt="Autoclass" class="img-fluid" >
+          </h3>
+          <ul class="Prefooter__info">
+            <li>Dirección: 123 Lima, Perú</li>
+            <li>Teléfono: +51 123 456 789 / 01 123 456</li>
+            <li>Email: <a href="#">info@midomain.com</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <h3 class="Prefooter__title">Información</h3>
+          <ul class="Prefooter__menu">
+            <li class="current-menu-item current_page_item"><a href="">Inicio</a></li>
+            <li><a href="">Solo hoy!</a></li>
+            <li><a href="">Marcas</a></li>
+            <li><a href="">Ayuda</a></li>
+            <li><a href="">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3 class="Prefooter__title">Síganos en Redes Sociales</h3>
+          <ul class="Prefooter__social">
+            <li class="active"><a href="#"><i class="icon-facebook"></i></a></li>
+            <li><a href="#"><i class="icon-google-plus"></i></a></li>
+            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-instagram"></i></a></li>
+            <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="Prefooter__title">Suscríbase a nuestras noticias</h3>
+          <p>Ingrese su e-mail y le estaremos avisando de nuestras ofertas especiales, no deje de enterarse de todos nuestros descuentos.</p>
+          <form class="Form Form--group mt-5" action="">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Ingrese su e-mail" aria-describedby="button-addon1">
+              <div class="input-group-append">
+                <button class="btn" type="button" id="button-addon1">Suscríbeme!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="Footer">
     <div class="container-fluid">

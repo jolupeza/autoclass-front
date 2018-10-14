@@ -23,7 +23,7 @@
       flex-wrap: wrap;
       .custom-select, .form-control {
         margin-bottom: 1.5rem;
-        width: 80%;
+        width: 90%;
       }
     }
   }
@@ -59,13 +59,18 @@
   margin-bottom: 2rem;
 }
 .Form__collapse__header {
-
+  @media screen and (max-width: 991px) {
+    padding: .8rem 0;
+  }
 }
 .Form__collapse__title {
   color: $secondColorAlt;
   font-size: .875rem;
   font-weight: 700;
   position: relative;
+  @media screen and (max-width: 991px) {
+    font-size: 1rem;
+  }
   [class^="icon-"] {
     cursor: pointer;
     position: absolute;
@@ -82,5 +87,10 @@
     overflow: hidden;
     position: relative;
     transition: height .35s ease;
+  }
+  .custom-control {
+    @media screen and (max-width: 991px) {
+      margin-bottom: .8rem;
+    }
   }
 }

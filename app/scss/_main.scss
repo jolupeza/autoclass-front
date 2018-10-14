@@ -9,6 +9,7 @@
   margin-bottom: 3rem;
   width: 60%;
   @media screen and (max-width: 991px) {
+    padding: 0 .8rem;
     width: 100%;
   }
 }
@@ -30,7 +31,8 @@
       margin-right: 0;
     }
     @media screen and (max-width: 767px) {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
+      padding: 0 .5rem;
     }
     a {
       color: $textColor;

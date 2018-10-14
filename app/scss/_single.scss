@@ -2,6 +2,14 @@
   display: flex;
   justify-content: space-between;
   margin: 1.5rem 0;
+  .Single__header__title, .Single__feeMonth {
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    flex-wrap: wrap;
+  }
 }
 .Single__state {
   font-size: .875rem;
@@ -29,6 +37,14 @@
 .Single__price {
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+.Single__feeMonth, .Single__priceFinal {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 .Single__feeSubtitle {
   font-size: 1.5rem;
@@ -41,6 +57,9 @@
 .Single__priceList {
   padding-left: 0;
   text-align: right;
+  @media screen and (max-width: 767px) {
+    text-align: left;
+  }
   li {
     list-style: none;
     span {
@@ -52,4 +71,10 @@
 .Single__form {
   margin: 0 auto;
   width: 50%;
+  @media screen and (max-width: 1400px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 1199px) {
+    width: 90%;
+  }
 }

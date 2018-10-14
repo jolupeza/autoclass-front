@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('./../fonts/icomoon.eot?o34dge');
-  src:  url('./../fonts/icomoon.eot?o34dge#iefix') format('embedded-opentype'),
-    url('./../fonts/icomoon.ttf?o34dge') format('truetype'),
-    url('./../fonts/icomoon.woff?o34dge') format('woff'),
-    url('./../fonts/icomoon.svg?o34dge#icomoon') format('svg');
+  src:  url('./../fonts/icomoon.eot?3ha8nv');
+  src:  url('./../fonts/icomoon.eot?3ha8nv#iefix') format('embedded-opentype'),
+    url('./../fonts/icomoon.ttf?3ha8nv') format('truetype'),
+    url('./../fonts/icomoon.woff?3ha8nv') format('woff'),
+    url('./../fonts/icomoon.svg?3ha8nv#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-check:before {
+  content: "\e91b";
+}
 .icon-minus:before {
   content: "\e918";
 }
@@ -77,6 +80,9 @@
 .icon-person_outline:before {
   content: "\e911";
 }
+.icon-spin-alt:before {
+  content: "\e913";
+}
 .icon-home:before {
   content: "\e91a";
 }
@@ -106,7 +112,4 @@
 }
 .icon-facebook-f:before {
   content: "\e903";
-}
-.icon-spin-alt:before {
-  content: "\e913";
 }

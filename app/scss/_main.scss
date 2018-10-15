@@ -39,7 +39,7 @@
       cursor: pointer;
       display: block;
       &:focus, &:hover {
-        color: $secondColor;
+        color: $thirdColor;
       }
     }
     &.active {

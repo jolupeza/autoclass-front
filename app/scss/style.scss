@@ -4,6 +4,9 @@
 //  Animate
 @import "./../../node_modules/animate.css/animate";
 
+// Slick
+@import "./../../node_modules/bxslider/dist/jquery.bxslider";
+
 @import "vars";
 @import "fonts";
 @import "general";
@@ -18,8 +21,4 @@
 @import "pagination";
 @import "single";
 @import "tabs";
-
-// @import "page";
-// @import "steps";
-// @import "box";
-// @import "reminders";
+@import "bxSlider";

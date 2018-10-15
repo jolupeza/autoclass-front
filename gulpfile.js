@@ -58,7 +58,6 @@ gulp.task('css', () => {
 
 gulp.task('concat', () => {
   return gulp.src([
-    //config.jsDir + '/start.js',
     config.jsDir + '/main.js',
   ])
   .pipe(sourcemaps.init())

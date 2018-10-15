@@ -77,6 +77,11 @@
         });
       }
     });
+
+    $('.bxslider').bxSlider({
+      pagerCustom: '.bx-pager',
+      auto: true
+    });
   });
 
   var checkScroll = function checkScroll() {

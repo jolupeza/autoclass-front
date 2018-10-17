@@ -41,13 +41,13 @@
   top: 0;
   text-transform: uppercase;
   &--nuevo {
-    background-color: $firstColorAlt;
+    background-color: $firstColor;
   }
   &--seminuevo {
-    background-color: $thirdColor;
+    background-color: $firstColorAlt;
   }
   &--populares {
-    background-color: $accentColor;
+    background-color: $secondColor;
   }
 }
 .Cards__info {

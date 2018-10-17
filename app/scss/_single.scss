@@ -77,7 +77,8 @@
   }
 }
 .Single__form {
-  margin: 0 auto;
+  display: none;
+  margin: 2rem auto;
   width: 50%;
   @media screen and (max-width: 1400px) {
     width: 70%;

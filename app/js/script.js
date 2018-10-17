@@ -17,6 +17,7 @@
     checkScroll();
     setTopSidebar();
     checkSearch();
+    initColumnTable();
 
     $('.ArrowTop').on('click', function (ev) {
       ev.preventDefault();
@@ -82,6 +83,16 @@
       pagerCustom: '.bx-pager',
       auto: true
     });
+
+    $('#js-show-form').on('click', function (ev) {
+      ev.preventDefault();
+
+      var $this = $(this),
+          form = $('.Single__form');
+
+      $this.fadeOut();
+      form.fadeIn();
+    });
   });
 
   var checkScroll = function checkScroll() {
@@ -121,6 +132,17 @@
         search.addClass('active');
       });
     }
+  };
+
+  var initColumnTable = function initColumnTable() {
+    var table = $('#nav-characteristics .Table'),
+        items = table.children('article'),
+        totalItems = items.length,
+        halfItems = Math.ceil(totalItems / 2);
+
+    items.wrapAll('<div class="row"></div>');
+    items.slice(0, halfItems).wrapAll('<div class="col-lg-6"></div>');
+    items.slice(halfItems, totalItems).wrapAll('<div class="col-lg-6"></div>');
   };
 
   var hViewport = function hViewport() {

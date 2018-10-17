@@ -6,23 +6,23 @@
   border-bottom: 1px solid $borderColor;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   width: 60%;
   @media screen and (max-width: 991px) {
-    padding: 0 .8rem;
+    border-bottom: none;
+    margin-bottom: 1.5rem;
     width: 100%;
   }
 }
 .Main__menuFilters {
   display: flex;
-  margin-bottom: 0;
+  margin-bottom: .3rem;
   padding-left: 0;
   width: 100%;
   @media screen and (max-width: 991px) {
     justify-content: space-between;
   }
   li {
-    font-size: 1.75rem;
     font-weight: 300;
     list-style: none;
     margin-right: 1.5rem;
@@ -30,22 +30,26 @@
     @media screen and (max-width: 991px) {
       margin-right: 0;
     }
-    @media screen and (max-width: 767px) {
-      font-size: 1.125rem;
-      padding: 0 .5rem;
-    }
     a {
-      color: $textColor;
+      background-color: $firstColor;
+      border-radius: .3rem;
+      color: white;
       cursor: pointer;
       display: block;
+      padding: .75rem 1.5rem;
+      @media screen and (max-width: 767px) {
+        padding: .75rem;
+      }
       &:focus, &:hover {
-        color: $thirdColor;
+        background-color: $firstColorAlt;
+        color: white;
       }
     }
     &.active {
       font-weight: 700;
       a {
-        color: $secondColor;
+        background-color: $firstColorAlt;
+        color: white;
       }
     }
   }

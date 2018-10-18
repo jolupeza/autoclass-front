@@ -1,3 +1,11 @@
+.Single__top {
+  background-color: $grayColor;
+  margin-bottom: 2rem;
+  padding: 1rem .8rem;
+}
+.Single__figure {
+  position: relative;
+}
 .Single__header {
   display: flex;
   justify-content: space-between;
@@ -32,15 +40,14 @@
 }
 .Single__state {
   font-size: .875rem;
-  font-weight: 300;
   &--nuevo {
     color: $firstColor;
   }
   &--seminuevo {
-    color: $fourthColor;
+    color: $firstColorAlt;
   }
   &--populares {
-    color: $accentColor;
+    color: $secondColor;
   }
 }
 .Single__title {

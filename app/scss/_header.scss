@@ -1,6 +1,4 @@
 .Header {
-  background-color: $firstColor;
-  margin-bottom: 3rem;
   padding: .8rem 0;
   @media screen and (max-width: 991px) {
     margin-bottom: 0;
@@ -11,9 +9,9 @@
   align-items: center;
   display: flex;
   margin-bottom: 0;
-  @media screen and (max-width: 991px) {
-    justify-content: center;
-  }
+}
+.Header__sponsor {
+  text-align: right;
 }
 .Header__nav {
   align-items: center;

@@ -9,33 +9,18 @@
 <body>
   <header class="Header">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-3">
+      <div class="row align-items-center">
+        <div class="col-6">
           <h1 class="Header__logo">
-            <a href="index.html">
-              <img src="images/logo-white.png" alt="Autoclass" class="img-fluid" />
+            <a href="#">
+              <img src="images/logo.png" alt="Autoclass" class="img-fluid" />
             </a>
           </h1>
         </div>
-        <div class="col-lg-9 d-none d-lg-block">
-          <section class="Header__nav">
-            <nav class="Header__menu">
-              <ul class="Header__mainMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Marcas</a></li>
-                <li><a href="">Ayuda</a></li>
-                <li><a href="">Contacto</a></li>
-              </ul>
-            </nav>
-            <nav class="Header__account">
-              <ul class="Header__accountMenu">
-                <li class="d-lg-none"><a href=""><i class="icon-bars"></i></a></li>
-                <li class="d-lg-none"><a href=""><i class="icon-search"></i></a></li>
-                <li><a href=""><i class="icon-person_outline"></i></a></li>
-                <li><a href=""><i class="icon-settings"></i></a></li>
-              </ul>
-            </nav>
-          </section>
+        <div class="col-6">
+          <h2 class="Header__sponsor">
+            <img src="images/acceso-logo.png" alt="Acceso" class="img-fluid" />
+          </h2>
         </div>
       </div>
     </div>
@@ -71,7 +56,7 @@
   <div class="container-fluid">
     <main class="Main">
       <section class="Single">
-        <div class="row">
+        <div class="row Single__top">
           <div class="col-lg-6">
             <figure class="Single__figure text-center">
               <div class="Slider Slider--captionVertical">
@@ -86,7 +71,7 @@
                     <img class="img-fluid" src="images/auto.png" />
                   </a>
                 </div>
-                <ul class="bxslider">
+                <ul class="bxslider" data-issold="on">
                   <li><img class="img-fluid m-auto" src="images/auto.png" /></li>
                   <li><img class="img-fluid m-auto" src="images/auto.png" /></li>
                   <li><img class="img-fluid m-auto" src="images/auto.png" /></li>
@@ -97,6 +82,8 @@
           <div class="col-lg-6">
             <div class="Single__info">
               <h5 class="Single__state Single__state--nuevo">Nuevo</h5>
+              <h5 class="Single__state Single__state--seminuevo">Seminuevo</h5>
+              <h5 class="Single__state Single__state--populares">Populares</h5>
               <h2 class="Single__title">Hyundai Elantra 2018</h2>
               <h6 class="Single__sold">399 vendidos</h6>
               <div class="Single__price">
@@ -207,10 +194,6 @@
           </div>
         </div>
       </section>
-
-      <!-- <aside class="Cards__loading">
-        <i class="icon-spin-alt d-inline-block animated infinite rotateIn"></i>
-      </aside> -->
     </main>
   </div>
 
@@ -219,7 +202,7 @@
       <div class="row">
         <div class="col-lg-3">
           <h3 class="Prefooter__logo">
-            <img src="images/logo.png" alt="Autoclass" class="img-fluid" >
+            <img src="images/logo-footer.png" alt="Autoclass" class="img-fluid" >
           </h3>
           <ul class="Prefooter__info">
             <li>Dirección: 123 Lima, Perú</li>

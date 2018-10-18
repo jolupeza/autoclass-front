@@ -2,7 +2,8 @@
 
 ;(function ($) {
   var $window = $(window),
-      statusSearch = false;
+      statusSearch = false,
+      bxFigureCars = null;
 
   $(function () {
     $window.on('scroll', function () {
@@ -79,9 +80,10 @@
       }
     });
 
-    $('.bxslider').bxSlider({
+    bxFigureCars = $('.bxslider').bxSlider({
       pagerCustom: '.bx-pager',
-      auto: true
+      auto: true,
+      onSliderLoad: bxSliderIsSolid()
     });
 
     $('#js-show-form').on('click', function (ev) {
@@ -143,6 +145,16 @@
     items.wrapAll('<div class="row"></div>');
     items.slice(0, halfItems).wrapAll('<div class="col-lg-6"></div>');
     items.slice(halfItems, totalItems).wrapAll('<div class="col-lg-6"></div>');
+  };
+
+  var bxSliderIsSolid = function bxSliderIsSolid() {
+    var bxSlider = $('.bxslider'),
+        isSold = bxSlider.data('issold') === 'on' ? true : false;
+
+    if (isSold) {
+      // console.log(bxSlider.closest('.bx-viewport'))
+      bxSlider.parent().addClass('isSold');
+    }
   };
 
   var hViewport = function hViewport() {

@@ -17,11 +17,14 @@
 .Cards__item {
   border: 1px solid $borderColor;
   margin-bottom: 2rem;
-  width: 23%;
-  &--33 {
-    width: 32%;
+  width: 18%;
+  &--25 {
+    width: 23%;
   }
   @media screen and (max-width: 1199px) {
+    width: 32%;
+  }
+  @media screen and (max-width: 991px) {
     width: 48%;
   }
   @media screen and (max-width: 767px) and (orientation: portrait) {
@@ -31,6 +34,19 @@
 .Cards__figure {
   background-color: $grayColor;
   position: relative;
+  &--sold {
+    &::after {
+      background: transparent url('./../images/vendido.png') center center no-repeat;
+      background-size: contain;
+      bottom: 0;
+      content: "";
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
 }
 .Cards__badge {
   color: white;
@@ -57,6 +73,9 @@
 .Cards__title {
   color: $headingColor;
   font-size: 1.875rem;
+  @media screen and (max-width: 1400px) {
+    font-size: 1.5rem;
+  }
   @media screen and (max-width: 991px) {
     font-size: 1.25rem;
   }
@@ -65,10 +84,16 @@
   strong {
     color: $accentColor;
     font-size: 1.25rem;
+    @media screen and (max-width: 1400px) {
+      display: block;
+    }
   }
 }
 .Cards__subtitle {
   font-size: 1.5rem;
+  @media screen and (max-width: 1400px) {
+    font-size: 1.25rem;
+  }
   @media screen and (max-width: 991px) {
     font-size: 1.125rem;
   }
@@ -77,6 +102,9 @@
   color: $accentColor;
   font-size: 2.25rem;
   font-weight: 700;
+  @media screen and (max-width: 1400px) {
+    font-size: 1.75rem;
+  }
   @media screen and (max-width: 991px) {
     font-size: 1.625rem;
   }

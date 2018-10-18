@@ -10208,6 +10208,9 @@ hr {
 .text-firstColor {
   color: #579bcb; }
 
+.text-secondColor {
+  color: #03599f; }
+
 .text-light {
   font-weight: 300; }
 
@@ -10355,8 +10358,6 @@ hr {
       background-color: #333333; }
 
 .Header {
-  background-color: #579bcb;
-  margin-bottom: 3rem;
   padding: .8rem 0; }
   @media screen and (max-width: 991px) {
     .Header {
@@ -10371,11 +10372,9 @@ hr {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0; }
-  @media screen and (max-width: 991px) {
-    .Header__logo {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
+
+.Header__sponsor {
+  text-align: right; }
 
 .Header__nav {
   -webkit-box-align: center;
@@ -10570,7 +10569,11 @@ hr {
         font-size: 1.5rem; } }
 
 .Main {
-  margin: 0 0 2rem; }
+  margin: 0 0 2rem;
+  padding: 0 2rem; }
+  @media screen and (max-width: 1400px) {
+    .Main {
+      padding: 0; } }
 
 .Main__filters {
   -webkit-box-align: center;
@@ -10604,31 +10607,35 @@ hr {
       -ms-flex-pack: justify;
       justify-content: space-between; } }
   .Main__menuFilters li {
+    font-size: 1.5rem;
     font-weight: 300;
     list-style: none;
     margin-right: 1.5rem;
     text-transform: uppercase; }
     @media screen and (max-width: 991px) {
       .Main__menuFilters li {
+        font-size: 1.125rem;
         margin-right: 0; } }
     .Main__menuFilters li a {
-      background-color: #579bcb;
-      border-radius: .3rem;
-      color: white;
+      border-radius: .5rem;
+      border-top: 1px solid transparent;
+      color: #5e5e5e;
       cursor: pointer;
       display: block;
-      padding: .75rem 1.5rem; }
+      padding: .5rem 1.5rem;
+      -webkit-transition: border-top-color .2s ease-out;
+      transition: border-top-color .2s ease-out; }
       @media screen and (max-width: 767px) {
         .Main__menuFilters li a {
-          padding: .75rem; } }
+          padding: .5rem; } }
       .Main__menuFilters li a:focus, .Main__menuFilters li a:hover {
-        background-color: #5ac8fa;
-        color: white; }
+        border-top-color: #03599f;
+        color: #03599f; }
     .Main__menuFilters li.active {
       font-weight: 700; }
       .Main__menuFilters li.active a {
-        background-color: #5ac8fa;
-        color: white; }
+        border-top-color: #03599f;
+        color: #03599f; }
 
 .Main__navigationFilters {
   display: -webkit-box;
@@ -10695,10 +10702,13 @@ hr {
 .Cards__item {
   border: 1px solid #eeeeee;
   margin-bottom: 2rem;
-  width: 23%; }
-  .Cards__item--33 {
-    width: 32%; }
+  width: 18%; }
+  .Cards__item--25 {
+    width: 23%; }
   @media screen and (max-width: 1199px) {
+    .Cards__item {
+      width: 32%; } }
+  @media screen and (max-width: 991px) {
     .Cards__item {
       width: 48%; } }
   @media screen and (max-width: 767px) and (orientation: portrait) {
@@ -10708,6 +10718,16 @@ hr {
 .Cards__figure {
   background-color: #f5f5f5;
   position: relative; }
+  .Cards__figure--sold::after {
+    background: transparent url("./../images/vendido.png") center center no-repeat;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
 
 .Cards__badge {
   color: white;
@@ -10731,6 +10751,9 @@ hr {
 .Cards__title {
   color: #242323;
   font-size: 1.875rem; }
+  @media screen and (max-width: 1400px) {
+    .Cards__title {
+      font-size: 1.5rem; } }
   @media screen and (max-width: 991px) {
     .Cards__title {
       font-size: 1.25rem; } }
@@ -10738,9 +10761,15 @@ hr {
 .Cards__text strong {
   color: #007aff;
   font-size: 1.25rem; }
+  @media screen and (max-width: 1400px) {
+    .Cards__text strong {
+      display: block; } }
 
 .Cards__subtitle {
   font-size: 1.5rem; }
+  @media screen and (max-width: 1400px) {
+    .Cards__subtitle {
+      font-size: 1.25rem; } }
   @media screen and (max-width: 991px) {
     .Cards__subtitle {
       font-size: 1.125rem; } }
@@ -10749,6 +10778,9 @@ hr {
   color: #007aff;
   font-size: 2.25rem;
   font-weight: 700; }
+  @media screen and (max-width: 1400px) {
+    .Cards__resalt {
+      font-size: 1.75rem; } }
   @media screen and (max-width: 991px) {
     .Cards__resalt {
       font-size: 1.625rem; } }
@@ -10837,6 +10869,14 @@ hr {
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%; }
 
+.Single__top {
+  background-color: #f5f5f5;
+  margin-bottom: 2rem;
+  padding: 1rem .8rem; }
+
+.Single__figure {
+  position: relative; }
+
 .Single__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10870,14 +10910,13 @@ hr {
       flex-wrap: wrap; } }
 
 .Single__state {
-  font-size: .875rem;
-  font-weight: 300; }
+  font-size: .875rem; }
   .Single__state--nuevo {
     color: #579bcb; }
   .Single__state--seminuevo {
-    color: #5afa5e; }
+    color: #5ac8fa; }
   .Single__state--populares {
-    color: #007aff; }
+    color: #03599f; }
 
 .Single__title {
   color: #242323;
@@ -11051,6 +11090,22 @@ hr {
         -ms-flex-order: 1;
         order: 1;
         width: 100%; } }
+  .Slider--captionVertical.isSold::after {
+    background: transparent url("./../images/vendido.png") center center no-repeat;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    margin-left: 15%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9; }
+    @media screen and (max-width: 767px) {
+      .Slider--captionVertical.isSold::after {
+        background-position: center 0;
+        margin-left: 0; } }
   .Slider .bx-wrapper {
     background-color: #f5f5f5;
     border: none;

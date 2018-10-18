@@ -15,6 +15,7 @@
   width: 100%;
 }
 .Cards__item {
+  align-content: space-between;
   border: 1px solid $borderColor;
   display: flex;
   flex-wrap: wrap;
@@ -35,6 +36,7 @@
 }
 .Cards__figure {
   background-color: $grayColor;
+  margin-bottom: 0;
   position: relative;
   width: 100%;
   &--sold {
@@ -70,11 +72,19 @@
   }
 }
 .Cards__info {
+  align-content: space-between;
   display: flex;
   flex-wrap: wrap;
+  height: 260px;
   padding: .75rem 1rem;
   text-align: center;
   width: 100%;
+  @media screen and (max-width: 1199px) {
+    height: 220px;
+  }
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
 }
 .Cards__title {
   color: $headingColor;
@@ -120,6 +130,5 @@
   }
 }
 .Cards__button {
-  align-self: flex-end;
   width: 100%;
 }

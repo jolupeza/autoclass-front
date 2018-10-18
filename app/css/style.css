@@ -10700,6 +10700,8 @@ hr {
   width: 100%; }
 
 .Cards__item {
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
   border: 1px solid #eeeeee;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10722,6 +10724,7 @@ hr {
 
 .Cards__figure {
   background-color: #f5f5f5;
+  margin-bottom: 0;
   position: relative;
   width: 100%; }
   .Cards__figure--sold::after {
@@ -10751,14 +10754,23 @@ hr {
     background-color: #03599f; }
 
 .Cards__info {
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  height: 260px;
   padding: .75rem 1rem;
   text-align: center;
   width: 100%; }
+  @media screen and (max-width: 1199px) {
+    .Cards__info {
+      height: 220px; } }
+  @media screen and (max-width: 767px) {
+    .Cards__info {
+      height: auto; } }
 
 .Cards__title {
   color: #242323;
@@ -10803,8 +10815,6 @@ hr {
       font-size: 1.625rem; } }
 
 .Cards__button {
-  -ms-flex-item-align: end;
-  align-self: flex-end;
   width: 100%; }
 
 .Sidebar {

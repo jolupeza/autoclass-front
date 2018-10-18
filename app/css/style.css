@@ -10701,6 +10701,11 @@ hr {
 
 .Cards__item {
   border: 1px solid #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
   width: 18%; }
   .Cards__item--25 {
@@ -10717,7 +10722,8 @@ hr {
 
 .Cards__figure {
   background-color: #f5f5f5;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   .Cards__figure--sold::after {
     background: transparent url("./../images/vendido.png") center center no-repeat;
     background-size: contain;
@@ -10745,12 +10751,19 @@ hr {
     background-color: #03599f; }
 
 .Cards__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: .75rem 1rem;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .Cards__title {
   color: #242323;
-  font-size: 1.875rem; }
+  font-size: 1.875rem;
+  width: 100%; }
   @media screen and (max-width: 1400px) {
     .Cards__title {
       font-size: 1.5rem; } }
@@ -10758,15 +10771,18 @@ hr {
     .Cards__title {
       font-size: 1.25rem; } }
 
-.Cards__text strong {
-  color: #007aff;
-  font-size: 1.25rem; }
-  @media screen and (max-width: 1400px) {
-    .Cards__text strong {
-      display: block; } }
+.Cards__text {
+  width: 100%; }
+  .Cards__text strong {
+    color: #007aff;
+    font-size: 1.25rem; }
+    @media screen and (max-width: 1400px) {
+      .Cards__text strong {
+        display: block; } }
 
 .Cards__subtitle {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  width: 100%; }
   @media screen and (max-width: 1400px) {
     .Cards__subtitle {
       font-size: 1.25rem; } }
@@ -10777,13 +10793,19 @@ hr {
 .Cards__resalt {
   color: #007aff;
   font-size: 2.25rem;
-  font-weight: 700; }
+  font-weight: 700;
+  width: 100%; }
   @media screen and (max-width: 1400px) {
     .Cards__resalt {
       font-size: 1.75rem; } }
   @media screen and (max-width: 991px) {
     .Cards__resalt {
       font-size: 1.625rem; } }
+
+.Cards__button {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  width: 100%; }
 
 .Sidebar {
   background-color: #ffffff;

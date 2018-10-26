@@ -10456,9 +10456,6 @@ hr {
       .Header__accountMenu li a:hover {
         color: #03599f; }
 
-.Header__menuMovil {
-  margin-bottom: 1.5rem; }
-
 .Footer {
   background-color: #0d0d0d;
   padding: 2rem 0; }
@@ -11196,5 +11193,15 @@ hr {
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1); }
+
+.Carousel {
+  margin-bottom: 1.5rem; }
+  .Carousel .carousel-control-prev, .Carousel .carousel-control-next {
+    color: #03599f;
+    font-size: 5rem;
+    opacity: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+    .Carousel .carousel-control-prev:hover, .Carousel .carousel-control-next:hover {
+      color: #fe5a1a; }
 
 /*# sourceMappingURL=maps/style.css.map */

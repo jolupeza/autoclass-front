@@ -4,7 +4,6 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Muli:300,400,700");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10074,8 +10073,8 @@ ul.bxslider {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("./../fonts/icomoon.eot?3ha8nv");
-  src: url("./../fonts/icomoon.eot?3ha8nv#iefix") format("embedded-opentype"), url("./../fonts/icomoon.ttf?3ha8nv") format("truetype"), url("./../fonts/icomoon.woff?3ha8nv") format("woff"), url("./../fonts/icomoon.svg?3ha8nv#icomoon") format("svg");
+  src: url("./../fonts/icomoon.eot?2vu11i");
+  src: url("./../fonts/icomoon.eot?2vu11i#iefix") format("embedded-opentype"), url("./../fonts/icomoon.ttf?2vu11i") format("truetype"), url("./../fonts/icomoon.woff?2vu11i") format("woff"), url("./../fonts/icomoon.svg?2vu11i#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -10091,6 +10090,51 @@ ul.bxslider {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-location:before {
+  content: "\e91f"; }
+
+.icon-spin-alt:before {
+  content: "\e913"; }
+
+.icon-phone:before {
+  content: "\e91d"; }
+
+.icon-envelope-o:before {
+  content: "\e91e"; }
+
+.icon-whatsapp:before {
+  content: "\e91c"; }
+
+.icon-home:before {
+  content: "\e91a"; }
+
+.icon-circle:before {
+  content: "\e919"; }
+
+.icon-close:before {
+  content: "\e916"; }
+
+.icon-bars:before {
+  content: "\e914"; }
+
+.icon-youtube-play:before {
+  content: "\e912"; }
+
+.icon-instagram:before {
+  content: "\e900"; }
+
+.icon-twitter:before {
+  content: "\e901"; }
+
+.icon-google-plus:before {
+  content: "\e902"; }
+
+.icon-facebook:before {
+  content: "\e903"; }
+
+.icon-facebook-f:before {
+  content: "\e903"; }
 
 .icon-check:before {
   content: "\e91b"; }
@@ -10145,39 +10189,6 @@ ul.bxslider {
 
 .icon-person_outline:before {
   content: "\e911"; }
-
-.icon-spin-alt:before {
-  content: "\e913"; }
-
-.icon-home:before {
-  content: "\e91a"; }
-
-.icon-circle:before {
-  content: "\e919"; }
-
-.icon-close:before {
-  content: "\e916"; }
-
-.icon-bars:before {
-  content: "\e914"; }
-
-.icon-youtube-play:before {
-  content: "\e912"; }
-
-.icon-instagram:before {
-  content: "\e900"; }
-
-.icon-twitter:before {
-  content: "\e901"; }
-
-.icon-google-plus:before {
-  content: "\e902"; }
-
-.icon-facebook:before {
-  content: "\e903"; }
-
-.icon-facebook-f:before {
-  content: "\e903"; }
 
 :root {
   --top-sidebar: 0;
@@ -10358,7 +10369,10 @@ hr {
       background-color: #333333; }
 
 .Header {
-  padding: .8rem 0; }
+  padding: .8rem 2rem; }
+  @media screen and (max-width: 1400px) {
+    .Header {
+      padding: .8rem 0; } }
   @media screen and (max-width: 991px) {
     .Header {
       margin-bottom: 0;
@@ -10464,9 +10478,18 @@ hr {
   margin-bottom: 0;
   padding-left: 0; }
   .Prefooter__info li {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     list-style: none;
     font-size: .875rem;
     margin-bottom: .8rem; }
+    .Prefooter__info li [class^="icon-"] {
+      font-size: 1.75rem;
+      margin-right: 1rem; }
 
 .Prefooter__title {
   color: white;
@@ -10727,7 +10750,7 @@ hr {
   margin-bottom: 0;
   position: relative;
   width: 100%; }
-  .Cards__figure--sold::after {
+  .Cards__figure--sold a::after {
     background: transparent url("./../images/vendido.png") center center no-repeat;
     background-size: contain;
     bottom: 0;
@@ -10998,6 +11021,12 @@ hr {
   @media screen and (max-width: 1199px) {
     .Single__form {
       width: 90%; } }
+
+.Single__contact {
+  margin-bottom: .8rem;
+  overflow: hidden; }
+  .Single__contact h4 {
+    font-weight: 700; }
 
 .Tabs__nav .nav-tabs {
   border-bottom: none; }

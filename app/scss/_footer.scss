@@ -17,9 +17,15 @@
   margin-bottom: 0;
   padding-left: 0;
   li {
+    align-items: center;
+    display: flex;
     list-style: none;
     font-size: .875rem;
     margin-bottom: .8rem;
+    [class^="icon-"] {
+      font-size: 1.75rem;
+      margin-right: 1rem;
+    }
   }
 }
 .Prefooter__title {

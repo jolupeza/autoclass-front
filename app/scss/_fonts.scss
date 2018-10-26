@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('./../fonts/icomoon.eot?3ha8nv');
-  src:  url('./../fonts/icomoon.eot?3ha8nv#iefix') format('embedded-opentype'),
-    url('./../fonts/icomoon.ttf?3ha8nv') format('truetype'),
-    url('./../fonts/icomoon.woff?3ha8nv') format('woff'),
-    url('./../fonts/icomoon.svg?3ha8nv#icomoon') format('svg');
+  src:  url('./../fonts/icomoon.eot?2vu11i');
+  src:  url('./../fonts/icomoon.eot?2vu11i#iefix') format('embedded-opentype'),
+    url('./../fonts/icomoon.ttf?2vu11i') format('truetype'),
+    url('./../fonts/icomoon.woff?2vu11i') format('woff'),
+    url('./../fonts/icomoon.svg?2vu11i#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +24,51 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-location:before {
+  content: "\e91f";
+}
+.icon-spin-alt:before {
+  content: "\e913";
+}
+.icon-phone:before {
+  content: "\e91d";
+}
+.icon-envelope-o:before {
+  content: "\e91e";
+}
+.icon-whatsapp:before {
+  content: "\e91c";
+}
+.icon-home:before {
+  content: "\e91a";
+}
+.icon-circle:before {
+  content: "\e919";
+}
+.icon-close:before {
+  content: "\e916";
+}
+.icon-bars:before {
+  content: "\e914";
+}
+.icon-youtube-play:before {
+  content: "\e912";
+}
+.icon-instagram:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\e901";
+}
+.icon-google-plus:before {
+  content: "\e902";
+}
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-facebook-f:before {
+  content: "\e903";
+}
 .icon-check:before {
   content: "\e91b";
 }
@@ -79,37 +122,4 @@
 }
 .icon-person_outline:before {
   content: "\e911";
-}
-.icon-spin-alt:before {
-  content: "\e913";
-}
-.icon-home:before {
-  content: "\e91a";
-}
-.icon-circle:before {
-  content: "\e919";
-}
-.icon-close:before {
-  content: "\e916";
-}
-.icon-bars:before {
-  content: "\e914";
-}
-.icon-youtube-play:before {
-  content: "\e912";
-}
-.icon-instagram:before {
-  content: "\e900";
-}
-.icon-twitter:before {
-  content: "\e901";
-}
-.icon-google-plus:before {
-  content: "\e902";
-}
-.icon-facebook:before {
-  content: "\e903";
-}
-.icon-facebook-f:before {
-  content: "\e903";
 }

@@ -40,16 +40,18 @@
   position: relative;
   width: 100%;
   &--sold {
-    &::after {
-      background: transparent url('./../images/vendido.png') center center no-repeat;
-      background-size: contain;
-      bottom: 0;
-      content: "";
-      display: block;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
+    a {
+      &::after {
+        background: transparent url('./../images/vendido.png') center center no-repeat;
+        background-size: contain;
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
     }
   }
 }

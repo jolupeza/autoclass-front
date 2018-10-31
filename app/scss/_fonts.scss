@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('./../fonts/icomoon.eot?4mzodj');
-  src:  url('./../fonts/icomoon.eot?4mzodj#iefix') format('embedded-opentype'),
-    url('./../fonts/icomoon.ttf?4mzodj') format('truetype'),
-    url('./../fonts/icomoon.woff?4mzodj') format('woff'),
-    url('./../fonts/icomoon.svg?4mzodj#icomoon') format('svg');
+  src:  url('./../fonts/icomoon.eot?uwodiy');
+  src:  url('./../fonts/icomoon.eot?uwodiy#iefix') format('embedded-opentype'),
+    url('./../fonts/icomoon.ttf?uwodiy') format('truetype'),
+    url('./../fonts/icomoon.woff?uwodiy') format('woff'),
+    url('./../fonts/icomoon.svg?uwodiy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,13 +24,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-eje:before {
+  content: "\e927";
+}
 .icon-marca:before {
   content: "\e92f";
 }
 .icon-rodante .path1:before {
   content: "\e930";
-  color: rgb(0, 0, 0);
   font-style: normal;
+  color: rgb(0, 0, 0);
 }
 .icon-rodante .path2:before {
   content: "\e931";
@@ -103,9 +106,6 @@
 }
 .icon-combustible:before {
   content: "\e926";
-}
-.icon-eje:before {
-  content: "\e927";
 }
 .icon-kilometraje:before {
   content: "\e928";

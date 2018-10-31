@@ -11198,17 +11198,17 @@ hr {
     @media screen and (max-width: 1400px) {
       .Tabs__content .Table article {
         width: 100%; } }
-    .Tabs__content .Table article span {
+    .Tabs__content .Table article > span {
       display: inline-block;
       font-weight: 700;
       min-width: 25%;
       text-align: center; }
-      .Tabs__content .Table article span.sm [class^="icon-"] {
+      .Tabs__content .Table article > span.sm [class^="icon-"] {
         font-size: 1.5rem; }
-      .Tabs__content .Table article span [class^="icon-"] {
+      .Tabs__content .Table article > span [class^="icon-"] {
         font-size: 3rem; }
       @media screen and (max-width: 1199px) {
-        .Tabs__content .Table article span {
+        .Tabs__content .Table article > span {
           min-width: 50%; } }
 
 .Slider {

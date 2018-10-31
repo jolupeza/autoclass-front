@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('./../fonts/icomoon.eot?2vu11i');
-  src:  url('./../fonts/icomoon.eot?2vu11i#iefix') format('embedded-opentype'),
-    url('./../fonts/icomoon.ttf?2vu11i') format('truetype'),
-    url('./../fonts/icomoon.woff?2vu11i') format('woff'),
-    url('./../fonts/icomoon.svg?2vu11i#icomoon') format('svg');
+  src:  url('./../fonts/icomoon.eot?4mzodj');
+  src:  url('./../fonts/icomoon.eot?4mzodj#iefix') format('embedded-opentype'),
+    url('./../fonts/icomoon.ttf?4mzodj') format('truetype'),
+    url('./../fonts/icomoon.woff?4mzodj') format('woff'),
+    url('./../fonts/icomoon.svg?4mzodj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,113 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-marca:before {
+  content: "\e92f";
+}
+.icon-rodante .path1:before {
+  content: "\e930";
+  color: rgb(0, 0, 0);
+  font-style: normal;
+}
+.icon-rodante .path2:before {
+  content: "\e931";
+  font-style: normal;
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rodante .path3:before {
+  content: "\e932";
+  font-style: normal;
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rodante .path4:before {
+  content: "\e933";
+  font-style: normal;
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-rodante .path5:before {
+  content: "\e934";
+  font-style: normal;
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-rodante .path6:before {
+  content: "\e935";
+  font-style: normal;
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rodante .path7:before {
+  content: "\e936";
+  font-style: normal;
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rodante .path8:before {
+  content: "\e937";
+  font-style: normal;
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rodante .path9:before {
+  content: "\e938";
+  font-style: normal;
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-rodante .path10:before {
+  content: "\e939";
+  font-style: normal;
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-anio:before {
+  content: "\e921";
+}
+.icon-asientos:before {
+  content: "\e922";
+}
+.icon-carroceria:before {
+  content: "\e923";
+}
+.icon-cilindros:before {
+  content: "\e924";
+}
+.icon-color:before {
+  content: "\e925";
+}
+.icon-combustible:before {
+  content: "\e926";
+}
+.icon-eje:before {
+  content: "\e927";
+}
+.icon-kilometraje:before {
+  content: "\e928";
+}
+.icon-motor:before {
+  content: "\e929";
+}
+.icon-pasajeros:before {
+  content: "\e92a";
+}
+.icon-potencia:before {
+  content: "\e92b";
+}
+.icon-ruedas:before {
+  content: "\e92c";
+}
+.icon-serie:before {
+  content: "\e92d";
+}
+.icon-version:before {
+  content: "\e92e";
+}
+.icon-modelo:before {
+  content: "\e920";
+}
 .icon-location:before {
   content: "\e91f";
 }

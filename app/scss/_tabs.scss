@@ -59,11 +59,14 @@
   }
   .Table {
     article {
+      align-items: center;
       border-bottom: 1px solid #d8d8d8;
+      display: flex;
       font-weight: 400;
       margin-bottom: .3rem;
       padding: .5rem;
       width: 80%;
+      word-break: break-all;
       @media screen and (max-width: 1400px) {
         width: 100%;
       }
@@ -71,6 +74,15 @@
         display: inline-block;
         font-weight: 700;
         min-width: 25%;
+        text-align: center;
+        &.sm {
+          [class^="icon-"] {
+            font-size: 1.5rem;
+          }
+        }
+        [class^="icon-"] {
+          font-size: 3rem;
+        }
         @media screen and (max-width: 1199px) {
           min-width: 50%;
         }

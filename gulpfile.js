@@ -111,7 +111,7 @@ gulp.task('js-sync', ['compress'], () => {
 gulp.task('browsersync', ['compress', 'style'], () => {
   sync.init({
     proxy: "autoclass.front",
-    browser: "firefox"
+    browser: "google-chrome"
     //browser: ["chrome", "firefox", "google-chrome"]
   });
 
@@ -120,9 +120,7 @@ gulp.task('browsersync', ['compress', 'style'], () => {
   gulp.watch(config.jsDir + '/*.js', ['js-sync']);
 });
 
-//gulp.task('default', () => {
-//  gulp.watch(config.scssDir + '/**/*.scss', ['style']);
-//});
+gulp.task('default', ['browsersync']);
 
 /*gulp.task()
 gulp.src()

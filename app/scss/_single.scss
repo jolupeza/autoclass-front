@@ -101,3 +101,22 @@
     font-weight: 700;
   }
 }
+.Single__contactLinks {
+  margin: .8rem 0;
+  h5 {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  ul {
+    list-style-type: none;
+    li {
+      @media screen and (max-width: 991px) {
+        margin-bottom: 1rem;
+      }
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+}
